@@ -112,7 +112,7 @@ export default function Navbar() {
           <Link href="/" className="block hover:text-blue-400">Home</Link>
           <Link href="/berita" className="block hover:text-blue-400">Berita</Link>
           <div className="space-y-2">
-            <p className="text-white font-semibold">Kabinet</p>
+          <Link href="/kabinet" className="block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
             <div className="pl-4 space-y-1">
               <Link href="/kabinet/dewan-pembina" className="block text-sm hover:text-blue-400">Dewan Pembina</Link>
               <Link href="/kabinet/bph" className="block text-sm hover:text-blue-400">BPH</Link>
