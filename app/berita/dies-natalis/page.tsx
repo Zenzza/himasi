@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
 export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">

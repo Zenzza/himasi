@@ -3,7 +3,6 @@
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer"; 
-import { ReactNode } from "react";
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import LoadingScreen from '@/components/LoadingScreen';

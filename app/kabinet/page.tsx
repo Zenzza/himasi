@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
 export default function KabinetPage() {
   return (
     <div className="bg-white text-gray-800">
@@ -14,7 +11,7 @@ export default function KabinetPage() {
           Kabinet RAKSABHINAYA adalah sebuah kabinet yang dibentuk oleh dan untuk mahasiswa Sistem Informasi. Kabinet ini berperan sebagai wadah bagi mahasiswa untuk menyalurkan ide, mengembangkan potensi, serta menjadi representasi mahasiswa di tingkat program studi.
         </p>
         <p className="text-gray-700">
-          <strong>RAKSABHINAYA</strong> sendiri merupakan gabungan dari dua kata bahasa sanskerta, yakni "RAKSA" dan "ABHINAYA". "RAKSA" bermakna menjaga; melindungi; menyayangi; dan memelihara, sebagai penjaga dan pelindung serta menyayangi dan memelihara hubungan baik antar sesama. Sedangkan "ABHINAYA" bermakna semangat dan ekspresif, yang mengibaratkan semangat untuk terus bergerak, berdedikasi, serta berani dalam mengukir prestasi.
+          <strong>RAKSABHINAYA</strong> sendiri merupakan gabungan dari dua kata bahasa sanskerta, yakni &quot;RAKSA&quot; dan &quot;ABHINAYA&quot;. &quot;RAKSA&quot; bermakna menjaga; melindungi; menyayangi; dan memelihara, sebagai penjaga dan pelindung serta menyayangi dan memelihara hubungan baik antar sesama. Sedangkan &quot;ABHINAYA&quot; bermakna semangat dan ekspresif, yang mengibaratkan semangat untuk terus bergerak, berdedikasi, serta berani dalam mengukir prestasi.
         </p>
       </section>
         <section className="bg-white py-12 px-4">

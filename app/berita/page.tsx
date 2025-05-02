@@ -1,7 +1,4 @@
-import Navbar from "@/components/navbar";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function BeritaPage() {
