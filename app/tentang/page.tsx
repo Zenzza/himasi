@@ -31,14 +31,14 @@ export default function Tentang() {
         <div className="mt-10 flex flex-col md:flex-row gap-6 text-black">
           <div className="flex-1">
             <h3 className="text-blue-900 font-bold text-lg mb-2 text-center">VISI</h3>
-            <ul className="list-disc list-outside">
+            <ul className="list-disc list-outside pl-6">
               <li>Menjadikan HIMASI sebagai organisasi unggul dalam bidang Teknologi dan menjawab tantangan globalisasi.</li>
               <li>Menjadi wadah kreatif, inovatif, dan intelektual bagi Mahasiswa ISB Atma Luhur khususnya jurusan Sistem Informasi.</li>
             </ul>
           </div>
           <div className="flex-1">
             <h3 className="text-blue-900 font-bold text-lg mb-2 text-center">MISI</h3>
-            <ul className="list-disc list-outside">
+            <ul className="list-disc list-outside pl-6">
               <li>Menciptakan mahasiswa yang aktif dan inovatif di bidang teknologi dan masyarakat.</li>
               <li>Mendorong kerjasama antar mahasiswa jurusan Sistem Informasi.</li>
               <li>Menjadi pelopor kegiatan yang berdampak dalam dan luar kampus.</li>

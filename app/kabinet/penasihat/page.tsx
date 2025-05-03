@@ -1,13 +1,16 @@
+import Image from "next/image";
+
 export default function PenasihatPage() {
   const ketua = {
     name: "M.Harisetiawan",
     title: "Ketua Divisi Penasihat",
+    image: "/anggota/WIP.png",
   };
 
   const anggota = [
-    "Nasir Zumali",
-    "Cha Cha Gracia Evelyn",
-    "Elsa Azila",
+    { name: "Nasir Zumali", image: "/anggota/WIP.png" },
+    { name: "Cha Cha Gracia Evelyn", image: "/anggota/WIP.png" },
+    { name: "Elsa Azila", image: "/anggota/WIP.png" },
   ];
 
   return (
@@ -32,8 +35,14 @@ export default function PenasihatPage() {
         </h2>
         <div className="mt-6 flex justify-center">
           <div className="bg-white rounded-lg shadow p-4 w-full max-w-xs flex flex-col items-center">
-            <div className="w-40 h-40 bg-gray-100 rounded border border-dashed" />
-            <p className="mt-4 text-center text-sm font-bold text-black">{ketua.name}</p>
+            <Image
+              src={ketua.image}
+              alt={ketua.name}
+              width={160}
+              height={160}
+              className="object-cover rounded mb-4"
+            />
+            <p className="text-center text-sm font-bold text-black">{ketua.name}</p>
             <p className="text-xs text-black text-center">{ketua.title}</p>
           </div>
         </div>
@@ -44,13 +53,19 @@ export default function PenasihatPage() {
           Anggota Divisi Penasihat
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {anggota.map((name, idx) => (
+          {anggota.map((person, idx) => (
             <div
               key={idx}
               className="bg-white rounded-lg shadow p-4 w-full max-w-[160px] mx-auto flex flex-col items-center"
             >
-              <div className="w-32 h-40 bg-gray-100 rounded border border-dashed" />
-              <p className="mt-3 text-center text-sm font-medium text-black">{name}</p>
+              <Image
+                src={person.image}
+                alt={person.name}
+                width={128}
+                height={170}
+                className="object-cover rounded mb-3"
+              />
+              <p className="text-center text-sm font-medium text-black">{person.name}</p>
             </div>
           ))}
         </div>

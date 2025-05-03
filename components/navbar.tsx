@@ -30,7 +30,6 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-blue-950 text-white shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center">
             <Image
               src="/LogoHIMASI.png"
@@ -44,7 +43,6 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center relative" ref={dropdownRef}>
             <Link href="/" className="hover:text-blue-400">Home</Link>
             <Link href="/berita" className="hover:text-blue-400">Berita</Link>
@@ -58,7 +56,7 @@ export default function Navbar() {
               </button>
 
               {isDropdownOpen && (
-                <div className="absolute top-12 right-0 bg-blue-950 rounded-xl w-[600px] p-6 grid grid-cols-2 gap-4 z-50">
+                <div className="absolute top-12 right-0 bg-blue-950 rounded-xl w-[600px] p-4 grid grid-cols-2 gap-4 z-50">
                   <div className="space-y-4">
                     {[
                       ["🏛️", "Dewan Pembina", "Dewan Pembina HIMASI ISB Atma Luhur", "/kabinet/dewan-pembina"],
@@ -77,25 +75,24 @@ export default function Navbar() {
                       </Link>
                     ))}
                   </div>
-
-                  <div className="bg-gray-100 rounded-lg p-4 flex flex-col justify-between">
-                    <img
+  
+                  <div className="bg-gray-100 rounded-lg p-3 flex flex-col items-center">
+                    <Image
                       src="/Placeholder.jpg"
                       alt="fotokabinet"
-                      className="rounded-md mb-3 object-cover"
+                      width={230}
+                      height={200}
+                      className="rounded-md mb-2 object-cover"
                     />
-                    <div>
-                      <p className="font-semibold text-black">Kabinet RAKSABHINAYA</p>
-                      <p className="text-sm text-gray-500">Kabinet HIMASI ISB Atma Luhur Periode 2025</p>
-                      <Link href="/kabinet" className="text-blue-600 text-sm mt-2 inline-block">
-                        Lihat Selengkapnya →
-                      </Link>
-                    </div>
+                    <p className="font-semibold text-black text-sm">Kabinet RAKSABHINAYA</p>
+                    <p className="text-xs text-gray-500">Kabinet HIMASI ISB Atma Luhur 2025</p>
+                    <Link href="/kabinet" className="text-blue-600 text-xs mt-2 inline-block">
+                      Lihat Selengkapnya →
+                    </Link>
                   </div>
-                </div>
+                  </div>
               )}
             </div>
-
             <Link href="/tentang" className="hover:text-blue-400">Tentang Himasi</Link>
           </div>
 

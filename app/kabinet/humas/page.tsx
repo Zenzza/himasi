@@ -1,15 +1,18 @@
+import Image from "next/image";
+
 export default function HumasPage() {
   const ketua = {
     name: "Yuriefal Miqdad",
     title: "Ketua Divisi Humas",
+    image: "/anggota/WIP.png",
   };
 
   const anggota = [
-    "Muhammad Idil Kusuma",
-    "M. Nur Alfajri",
-    "Zahra Azaria",
-    "Muhammad Haikal",
-    "Nabila Audia A.Nasution",
+    { name: "Muhammad Idil Kusuma", image: "/anggota/WIP.png" },
+    { name: "M. Nur Alfajri", image: "/anggota/WIP.png" },
+    { name: "Zahra Azaria", image: "/anggota/WIP.png" },
+    { name: "Muhammad Haikal", image: "/anggota/WIP.png" },
+    { name: "Nabila Audia A.Nasution", image: "/anggota/WIP.png" },
   ];
 
   return (
@@ -34,8 +37,14 @@ export default function HumasPage() {
         </h2>
         <div className="mt-6 flex justify-center">
           <div className="bg-white rounded-lg shadow p-4 w-full max-w-xs flex flex-col items-center">
-            <div className="w-40 h-40 bg-gray-100 rounded border border-dashed" />
-            <p className="mt-4 text-center text-sm font-bold text-black">{ketua.name}</p>
+            <Image
+              src={ketua.image}
+              alt={ketua.name}
+              width={160}
+              height={213}
+              className="object-cover rounded mb-4"
+            />
+            <p className="mt-1 text-center text-sm font-bold text-black">{ketua.name}</p>
             <p className="text-xs text-black text-center">{ketua.title}</p>
           </div>
         </div>
@@ -46,13 +55,19 @@ export default function HumasPage() {
           Anggota Divisi Humas
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {anggota.map((name, idx) => (
+          {anggota.map((person, idx) => (
             <div
               key={idx}
               className="bg-white rounded-lg shadow p-4 w-full max-w-[160px] mx-auto flex flex-col items-center"
             >
-              <div className="w-32 h-40 bg-gray-100 rounded border border-dashed" />
-              <p className="mt-3 text-center text-sm font-medium text-black">{name}</p>
+              <Image
+                src={person.image}
+                alt={person.name}
+                width={128}
+                height={170}
+                className="object-cover rounded mb-3"
+              />
+              <p className="text-center text-sm font-medium text-black">{person.name}</p>
             </div>
           ))}
         </div>

@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import FAQAccordion from '@/components/FAQAccordion'; 
+import Link from "next/link";
+import QuoteBanner from "@/components/QuoteBanner";
 
 export default function Home() {
   return (
@@ -25,13 +26,12 @@ export default function Home() {
 
       <section className="container mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 className="text-black text-3xl font-bold mb-4">HIMASI</h2>
+          <h2 className="text-black text-3xl font-bold mb-4 font-center">HIMASI</h2>
           <p className="text-black text-xl mb-6">
             HIMASI adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi.
           </p>
           <a href="/tentang"><Button>Selengkapnya</Button></a>
         </div>
-
         <div className="flex flex-col items-center">
           <h2 className="text-black text-3xl font-bold mb-4">Video Profil</h2>
           <div className="w-full aspect-video">
@@ -45,57 +45,70 @@ export default function Home() {
           </div>
         </div>
       </section>
+        <section className="py-12 bg-[#f1f5f9]">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-black text-3xl font-bold text-center mb-10">Berita HIMASI</h2>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  link: "https://www.instagram.com/p/DJDZD2lTTQ-/",
+                  image: "/Feed IG HIMASI SIAPRESIASI.png",
+                  title: "SI-Apresiasi: Finalis DUTA BAHASA Provinsi Kep. Bangka Belitung 2025",
+                  desc: "Keluarga besar Himpunan Mahasiswa Sistem Informasi mengucapkan selamat dan apresiasi yang sebesar-besarnya kepada: Zahra Azaria..."
+                },
+                {
+                  link: "https://www.instagram.com/p/DIyeepqT5S4/",
+                  image: "/PemenangKDL.jpg",
+                  title: "PEMENANG Kompetisi Design Logo 25th DIES NATALIS ISB Atma Luhur",
+                  desc: "🔥 Inilah Sang Juara! 🔥 Dengan penuh kebanggaan, kami umumkan Marvel Luzniky dan Valentina dari SMK BAKTI PANGKALPINANg sebagai Pemenang Kompetisi..."
+                },
+                {
+                  link: "https://www.instagram.com/p/DHu0c53zyB_",
+                  image: "/COVER 2.png",
+                  title: "Dokumentasi HIMASI BERBAGI 2025",
+                  desc: "Kebahagiaan sejati bukan hanya tentang apa yang kita miliki, tetapi juga tentang apa yang bisa kita bagikan. Dalam HIMASI BERBAGI kita belajar bahwa sekecil apa pun bantuan yang diberikan, dapat..."
+                },
+                {
+                  link: "https://www.instagram.com/p/DHKXjoUzoLQ/",
+                  image: "/FEED IG HIMASI BERBAGI (FIX).png",
+                  title: "HIMASI BERBAGI 2025",
+                  desc: "Program sosial dari HIMASI ISB Atma Luhur yang bertujuan menyebarkan kebaikan di bulan Ramadan bersama masyarakat..."
+                },
+              ].map((berita, idx) => (
+              <Link key={idx} href={berita.link}>
+                <div className="flex flex-col bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 h-full">
+                  {/* Gambar */}
+                  <div className="w-full aspect-[2.3/3] relative">
+                    <Image
+                      src={berita.image}
+                      alt={berita.title}
+                      fill
+                      className="object-cover rounded-t-lg"
+                    />
+                  </div>
+                  <div className="p-4 flex flex-col justify-between flex-grow">
+                    <h3 className="text-black text-lg font-semibold mb-2 line-clamp-2 text-center">{berita.title}</h3>
+                    <p className="text-black text-sm line-clamp-3 text-center">{berita.desc}</p>
+                  </div>
+                </div>
+              </Link>
+              ))}
+            </div>
 
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <h2 className="text-black text-3xl font-bold text-center mb-8">Berita HIMASI</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <a href="https://www.instagram.com/p/DJDZD2lTTQ-/">
-            <Card>
-              <CardContent className="p-4">
-                <Image src="/Feed IG HIMASI SIAPRESIASI.png" alt="Berita 1" width={400} height={200} className="rounded-md mb-4" />
-                <h3 className="text-black text-xl font-semibold mb-2">SI-Apresiasi : Finalis DUTA BAHASA Provinsi Kep. Bangka Belitung 2025</h3>
-                <p className="text-black">Keluarga besar Himpunan Mahasiswa Sistem Informasi mengucapkan selamat dan apresiasi yang sebesar-besarnya kepada: Zahra Azaria...</p>
-              </CardContent>
-            </Card>
-            </a>
-            <a href="https://www.instagram.com/p/DIyeepqT5S4/">
-            <Card>
-              <CardContent className="p-4">
-                <Image src="/PemenangKDL.jpg" alt="Berita 2" width={400} height={200} className="rounded-md mb-4" />
-                <h3 className="text-black text-xl font-semibold mb-2">PEMENANG Kompetisi Design Logo 25th DIES NATALIS ISB Atma Luhur</h3>
-                <p className="text-black">🔥 Inilah Sang Juara! 🔥 Dengan penuh kebanggaan, kami umumkan Marvel Luzniky dan Valentina dari SMK BAKTI PANGKALPINANg sebagai Pemenang Kompetisi...</p>
-              </CardContent>
-            </Card>
-            </a>
-            <a href="https://www.instagram.com/p/DHu0c53zyB_">
-            <Card>
-              <CardContent className="p-4">
-                <Image src="/COVER 2.png" alt="Berita 3" width={400} height={200} className="rounded-md mb-4" />
-                <h3 className="text-black text-xl font-semibold mb-2">Dokumentasi HIMASI BERBAGI 2025</h3>
-                <p className="text-black">Kebahagiaan sejati bukan hanya tentang apa yang kita miliki, tetapi juga tentang apa yang bisa kita bagikan. Dalam HIMASI BERBAGI kita belajar bahwa sekecil apa pun bantuan yang diberikan,dapat...  </p>
-              </CardContent>
-            </Card>
-            </a>
-            <a href="https://www.instagram.com/p/DHKXjoUzoLQ/">
-            <Card>
-              <CardContent className="p-4">
-                <Image src="/FEED IG HIMASI BERBAGI (FIX).png" alt="Berita 4" width={400} height={200} className="rounded-md mb-4" />
-                <h3 className="text-black text-xl font-semibold mb-2">HIMASI BERBAGI 2025</h3>
-                <p className="text-black">Program sosial dari HIMASI ISB Atma Luhur yang bertujuan memenebarkan kebaikan di bulan Ramadan bersama masyarakat. Dana untuk kegiatan ini dikumpulkan mandiri melalui donasi dan sponsor, sehingga setiap bantuan ... </p>
-              </CardContent>
-            </Card>
-            </a>
+            <div className="flex justify-center mt-10">
+              <a href="/berita">
+                <Button className="text-white bg-blue-600 hover:bg-blue-700">Berita Lainnya</Button>
+              </a>
+            </div>
           </div>
-
-          <div className="flex justify-center mt-8">
-            <a href="/berita"><Button>Berita Lainnya</Button></a>
-          </div>
-        </div>
         <br />
         <br />
-        <FAQAccordion />
-      </section>
+        <QuoteBanner />
+        <br />
+        <br />
+        <FAQAccordion /> 
+        </section>
     </main>
   );
 }

@@ -1,19 +1,22 @@
+import Image from "next/image"; 
 export default function MedkominfoPage() {
   const ketua = {
     name: "Achmad Zacky Saputra",
     title: "Ketua Divisi MEDKOMINFO",
+    photo: "/anggota/WIP.png", 
   };
 
-  const anggota = [
-    "Viky Saputra",
-    "Sakira Nabila",
-    "Nathan Nehrow Siregar",
-    "Jordi Venzen",
-    "Alki Fernando",
-    "Fakih Arif Biah",
-    "Muhammad Irfan",
-    "Rakha Pratama Winarno",
-  ];
+const anggota = [
+  { name: "Viky Saputra", photo: "/anggota/WIP.png" },
+  { name: "Sakira Nabila", photo: "/anggota/WIP.png" },
+  { name: "Nathan Nehrow Siregar", photo: "/anggota/WIP.png" },
+  { name: "Jordi Venzen", photo: "/anggota/WIP.png" },
+  { name: "Alki Fernando", photo: "/anggota/WIP.png" },
+  { name: "Fakih Arif Biah", photo: "/anggota/WIP.png" },
+  { name: "Muhammad Irfan", photo: "/anggota/WIP.png" },
+  { name: "Rakha Pratama Winarno", photo: "/anggota/WIP.png" },
+];
+
 
   return (
     <main className="bg-[#f1f5f9] min-h-screen pt-8">
@@ -37,11 +40,18 @@ export default function MedkominfoPage() {
         </h2>
         <div className="mt-6 flex justify-center">
           <div className="bg-white rounded-lg shadow p-4 w-full max-w-xs flex flex-col items-center">
-            <div className="w-40 h-40 bg-gray-100 rounded border border-dashed" />
+            <Image
+              src={ketua.photo}
+              alt={ketua.name}
+              width={200}
+              height={250}
+              className="w-40 h-52 object-cover rounded"
+            />
             <p className="mt-4 text-center text-sm font-bold text-black">{ketua.name}</p>
             <p className="text-xs text-black text-center">{ketua.title}</p>
           </div>
         </div>
+
       </section>
 
       <section className="mt-14 px-4">
@@ -49,13 +59,19 @@ export default function MedkominfoPage() {
           Anggota Divisi MEDKOMINFO
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-4">
-          {anggota.map((name, idx) => (
+          {anggota.map((member, idx) => (
             <div
               key={idx}
               className="bg-white rounded-lg shadow p-4 w-full max-w-[160px] mx-auto flex flex-col items-center"
             >
-              <div className="w-32 h-40 bg-gray-100 rounded border border-dashed" />
-              <p className="mt-3 text-center text-sm font-medium text-black">{name}</p>
+              <Image
+                src={member.photo}
+                alt={member.name}
+                width={160}
+                height={200}
+                className="w-32 h-40 object-cover rounded"
+              />
+              <p className="mt-3 text-center text-sm font-medium text-black">{member.name}</p>
             </div>
           ))}
         </div>
