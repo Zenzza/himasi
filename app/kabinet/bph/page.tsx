@@ -23,7 +23,6 @@ const pengurus = [
   },
 ];
 
-  
   export default function BPHPage() {
     return (
       <main className="bg-[#f4f6fb] min-h-screen text-center">
