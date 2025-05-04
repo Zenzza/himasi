@@ -67,9 +67,9 @@ export default function BeritaCarousel() {
             nextEl: nextRef.current,
           }}
           onBeforeInit={(swiper) => {
-            // @ts-ignore
+            // @ts-expect-error: ref may be null during Swiper init
             swiper.params.navigation.prevEl = prevRef.current
-            // @ts-ignore
+            // @ts-expect-error: ref may be null during Swiper init
             swiper.params.navigation.nextEl = nextRef.current
           }}
           pagination={{ clickable: true }}

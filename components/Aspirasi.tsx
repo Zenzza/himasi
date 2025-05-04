@@ -33,7 +33,7 @@ export default function AspirasiForm() {
       } else {
         alert('Gagal mengirim aspirasi.')
       }
-    } catch (error) {
+    } catch {
       alert('Terjadi kesalahan.')
     } finally {
       setLoading(false)
