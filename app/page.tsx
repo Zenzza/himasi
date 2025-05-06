@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="container mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100  ">
         <div>
           <h2 className="text-black text-3xl font-bold mb-4 font-center">HIMASI</h2>
           <p className="text-black text-xl mb-6">
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-        <section className="py-12 bg-[#f1f5f9]">
+        <section className="py-12 bg-gray-100">
         <BeritaCarousel />
         <br />
         <br />

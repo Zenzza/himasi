@@ -109,11 +109,13 @@ export default function AspirasiForm() {
 
       <div className="w-full md:w-1/2">
         <p className="text-black text-lg">
-          Isi form ini untuk menyampaikan aspirasi dan saran kamu. Kami sangat menghargai masukan dari kamu
-          untuk membantu meningkatkan kualitas kegiatan dan program yang ada di lingkungan kita. Jangan ragu untuk
-          berbagi ide atau keluhan yang mungkin kamu alami. Semua aspirasi akan dipertimbangkan dengan serius.
+        Suaramu penting untuk kami! <br />
+        Form ini disediakan untuk seluruh mahasiswa Sistem Informasi yang ingin menyampaikan kritik, saran, ide, maupun aspirasi lainnya terkait kegiatan, pelayanan, atau hal-hal yang ingin ditingkatkan di HIMASI dan Prodi SI. <br /> Semua masukan akan kami tampung dan bahas untuk menciptakan HIMASI dan Prodi SI yang lebih baik, terbuka, dan adaptif! 
+        <br />
+        Kerahasiaan data akan dijaga. Kamu bisa mengisi secara anonim atau mencantumkan identitas jika bersedia dihubungi lebih lanjut.
         </p>
-        <p>
+        <br />
+        <p className="text-black text-lg">
             - HIMASI ISB Atma Luhur
         </p>
       </div>

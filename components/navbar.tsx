@@ -39,7 +39,7 @@ export default function Navbar() {
               className="mr-2"
             />
             <Link href="/" className="font-bold text-white text-sm md:text-base">
-              HIMASI ISB ATMALUHUR
+              HIMASI ISB ATMA LUHUR
             </Link>
           </div>
 
