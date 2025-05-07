@@ -54,7 +54,7 @@ const pengurus = [
                     src={member.image}
                     alt={member.name}
                     width={200}
-                    height={266} // Untuk rasio 3:4
+                    height={266}
                     className="object-cover rounded-md mb-4"
                   />
                   <p className="font-semibold text-black">{member.name}</p>
