@@ -25,7 +25,7 @@ export default function LoadingScreen() {
   }, [])
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-blue-950 text-center">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-blue-800 text-center">
       <div className="relative w-24 h-24 mb-6">
         <div className="absolute inset-0 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
         <Image src="/LogoHIMASI.png" alt="Logo HIMASI" fill className="object-contain p-3" />

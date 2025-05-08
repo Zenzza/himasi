@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-950 text-white pt-10 pb-6 px-6 md:px-12 text-sm">
+    <footer className="bg-gradient-to-tr from-black via-blue-800 to-blue-400 text-white pt-10 pb-6 px-6 md:px-12 text-sm">
       <div className="max-w-7xl mx-auto grid md:grid-cols-5 gap-8">
         <div className="md:col-span-2 space-y-4">
           <img src="/LogoHIMASI.png" alt="HIMASI Logo" className="w-36" />
@@ -90,7 +90,7 @@ export default function Footer() {
 
       <div className="border-t border-gray-300 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs">
         <p>© 2025 - HIMASI ISB Atma Luhur - All rights reserved</p>
-        <p className="mt-2 md:mt-0">Active, Creative, Effective!</p>
+        <p className="md:text-right">Created by <Link href="/tentang/profil">Divisi MEDKOMINFO</Link></p>
       </div>
     </footer>
   );

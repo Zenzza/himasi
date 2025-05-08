@@ -2,7 +2,12 @@ export default function KabinetPage() {
   return (
     <div className="bg-white text-gray-800">
       <section className="relative h-[300px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: 'url(/back1.jpg)' }}>
-        <h1 className="text-white text-4xl md:text-5xl font-bold z-10 text-center">KABINET RAKSABHINAYA</h1>
+        <div className="absolute inset-0 flex flex-col justify-center items-center">
+            <h1 className="text-white text-3xl md:text-5xl font-bold pt-16">KABINET RAKSABHINAYA</h1>
+            <p className="text-white text-sm md:text-lg mt-2">
+              Himpunan Mahasiswa Sistem Informasi ISB Atma Luhur
+            </p>
+          </div>
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-12 text-center">

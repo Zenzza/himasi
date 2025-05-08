@@ -11,7 +11,7 @@ export default function Tentang() {
      <div className="relative">
         <div className="w-full h-[300px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url(/back1.jpg)' }}>
           <div className="relative text-center text-white z-10">
-            <h1 className="text-4xl font-bold">Tentang HIMASI</h1>
+            <h1 className="text-4xl font-bold pt-16">Tentang HIMASI</h1>
             <p className="text-lg">Yuk Kenalan dengan HIMASI!</p>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function Tentang() {
           <div className="flex flex-col items-center">
             <Image src="/LogoHIMASI.png" width={200} height={200} alt="Logo HIMASI" className="mx-auto md:mx-0 text-center" />
           </div>
-          <div className="flex-1 text-justify text-black">
+          <div className="flex-1 text-center md:text-justify text-black">
             <p><strong>(HIMASI)</strong> Himpunan Mahasiswa Sistem Informasi hadir sebagai wadah bagi mahasiswa program studi Sistem Informasi untuk mengembangkan diri secara akademik dan non-akademik. Organisasi ini berfungsi sebagai jembatan yang menghubungkan mahasiswa dengan dunia akademik, industri, dan masyarakat melalui serangkaian program kerja yang terstruktur. HIMASI berupaya meningkatkan kompetensi akademik anggotanya melalui seminar, workshop, dan diskusi, sekaligus mengasah keterampilan praktis melalui pelatihan teknis dan proyek kolaboratif. Dengan semangat kekeluargaan, HIMASI juga mendorong anggotanya untuk berkontribusi kepada masyarakat melalui kegiatan pengabdian yang memanfaatkan ilmu sistem informasi. Bergabung dengan HIMASI bukan hanya tentang mempersiapkan diri untuk karir di masa depan, tetapi juga tentang menjadi individu yang berintegritas, kreatif, dan peduli terhadap lingkungan sekitar.</p>
           </div>
         </div>

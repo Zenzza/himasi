@@ -21,7 +21,7 @@ const faqData = [
     answer: 'Program kerja meliputi seminar, workshop, pengabdian masyarakat, dan lainnya.',
   },
   {
-    question: 'Bagaimana Cara Bergabung di HIMASI ISB Atmna Luhur?',
+    question: 'Bagaimana Cara Bergabung di HIMASI ISB Atma Luhur?',
     answer: 'Mahasiswa Sistem Informasi dapat mendaftar melalui open recruitment ORMAWA.',
   },
   {
@@ -38,7 +38,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-blue-950 py-12 px-4 md:px-16 max-w-4xl mx-auto rounded-2xl">
+    <section className="bg-blue-800 py-12 px-4 md:px-16 max-w-4xl mx-auto rounded-2xl">
       <h2 className="text-3xl font-bold mb-2">FAQ</h2>
       <h3 className="text-2xl font-extrabold mb-8">HIMASI ISB Atma Luhur</h3>
       <div className="divide-y divide-gray-300">
@@ -54,7 +54,7 @@ export default function FAQ() {
                 <p className="text-sm mt-2 text-white normal-case">{item.answer}</p>
               )}
             </div>
-            <div className="ml-4 text-xl text-gray-600">
+            <div className="ml-4 text-xl text-white">
               {activeIndex === index ? <FiMinus /> : <FiPlus />}
             </div>
           </div>

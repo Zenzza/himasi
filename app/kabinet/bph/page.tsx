@@ -36,7 +36,7 @@ const pengurus = [
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center">
-            <h1 className="text-3xl md:text-5xl font-bold">Badan Pengurus Harian</h1>
+            <h1 className="text-3xl md:text-5xl font-bold pt-16">Badan Pengurus Harian</h1>
             <p className="text-sm md:text-lg mt-2">
               Himpunan Mahasiswa Sistem Informasi ISB Atma Luhur
             </p>

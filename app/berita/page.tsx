@@ -50,7 +50,7 @@ export default function BeritaPage() {
   return (
     <main>
       <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">
-          <h1 className="text-4xl font-bold">BERITA HIMASI</h1>
+          <h1 className="text-4xl font-bold pt-16">BERITA HIMASI</h1>
           <p className="text-xl mt-4">Informasi / Berita seputar HIMASI</p>
       </section>
 

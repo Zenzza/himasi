@@ -42,7 +42,8 @@ export default function BeritaCarousel() {
 
   return (
     <section className="py-16 bg-gray-100 relative">
-      <h2 className="text-3xl font-bold text-center text-black mb-10">Berita HIMASI </h2>
+      <h2 className="text-3xl font-bold text-center text-black mb-2">Berita HIMASI </h2>
+      <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
 
       <div className="relative px-4 max-w-screen-md sm:max-w-screen-lg mx-auto">
         <div
@@ -57,7 +58,6 @@ export default function BeritaCarousel() {
         >
           ❯
         </div>
-
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={16}
@@ -72,7 +72,10 @@ export default function BeritaCarousel() {
             // @ts-expect-error: ref may be null during Swiper init
             swiper.params.navigation.nextEl = nextRef.current
           }}
-          pagination={{ clickable: true }}
+          pagination={{ 
+              clickable: true,
+              el: '.custom-swiper-pagination',
+          }}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
         >
           {beritaList.map((item, idx) => (
@@ -103,6 +106,7 @@ export default function BeritaCarousel() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="custom-swiper-pagination flex justify-center mt-6" />
       </div>
     </section>
   )

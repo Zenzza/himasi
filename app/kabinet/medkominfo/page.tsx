@@ -27,7 +27,7 @@ const anggota = [
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-2xl md:text-5xl font-bold text-white">Divisi MEDKOMINFO</h1>
+          <h1 className="text-2xl md:text-5xl font-bold text-white pt-10">Divisi MEDKOMINFO</h1>
           <p className="text-sm md:text-lg mt-2 text-white">
             Himpunan Mahasiswa Sistem Informasi ISB Atma Luhur
           </p>

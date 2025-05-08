@@ -2,7 +2,7 @@ export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">
       <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">
-          <h1 className="text-4xl font-bold">Whats On SI?</h1>
+          <h1 className="text-4xl font-bold pt-16">Whats On SI?</h1>
           <p className="text-xl mt-4">FAQ dan Fun Fact around SISTEM INFORMASI</p>
       </section>
         <section className="max-w-5xl mx-auto px-6 py-12 text-center">

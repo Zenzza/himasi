@@ -2,7 +2,7 @@ export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">
       <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">
-          <h1 className="text-4xl font-bold">Open Recruitment HIMASI</h1>
+          <h1 className="text-4xl font-bold pt-16">Open Recruitment HIMASI</h1>
           <p className="text-xl mt-4">Ayo join HIMASI dan berkembang bersama!</p>
       </section>
         <section className="max-w-5xl mx-auto px-6 py-12 text-center">

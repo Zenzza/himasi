@@ -4,6 +4,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import QuoteBanner from "@/components/QuoteBanner";
 import BeritaCarousel from "@/components/BeritaCarousel";
 import AspirasiForm from "@/components/Aspirasi";
+import Fitur from "@/components/Fitur";
 
 export default function Home() {
   return (
@@ -25,17 +26,43 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100  ">
-        <div>
-          <h2 className="text-black text-3xl font-bold mb-4 font-center">HIMASI</h2>
-          <p className="text-black text-xl mb-6">
-            HIMASI adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi.
-          </p>
-          <a href="/tentang"><Button>Selengkapnya</Button></a>
+      <section className="container mx-auto py-20 px-6 md:px-10 bg-gray-100 rounded-2xl">
+        <h2 className="text-black text-3xl font-bold mb-2 text-center">HIMASI</h2>
+        <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-black text-3xl font-bold mb-4 text-center md:text-left">Apa itu HIMASI?</h3>
+            <p className="text-black text-xl mb-6 text-center md:text-left">
+              HIMASI adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi. Organisasi ini berfungsi sebagai jembatan yang menghubungkan mahasiswa dengan dunia akademik, industri, dan masyarakat melalui serangkaian program kerja yang terstruktur. HIMASI berupaya meningkatkan kompetensi akademik anggotanya melalui seminar, workshop, dsb...
+            </p>
+            <p className="text-black mt-4 text-xl font-bold text-center md:text-left">
+              "AKTIF, KREATIF, EFEKTIF"
+            </p>
+            <br />
+            <a href="/tentang">
+              <Button>Selengkapnya</Button>
+            </a>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-md">
+            <h3 className="text-2xl font-bold text-black mb-4">Visi</h3>
+            <ul className="list-disc list-outside pl-6 text-gray-800 text-lg space-y-2">
+              <li>Menjadikan HIMASI sebagai organisasi unggul dalam bidang Teknologi dan menjawab tantangan globalisasi.</li>
+              <li>Menjadi wadah kreatif, inovatif, dan intelektual bagi Mahasiswa ISB Atma Luhur khususnya jurusan Sistem Informasi.</li>
+            </ul>
+            <br />
+            <h3 className="text-2xl font-bold text-black mb-4">Misi</h3>
+            <ul className="list-disc list-outside pl-6 text-gray-800 text-lg space-y-2">
+              <li>Menciptakan mahasiswa yang aktif dan inovatif di bidang teknologi dan masyarakat.</li>
+              <li>Mendorong kerjasama antar mahasiswa jurusan Sistem Informasi.</li>
+              <li>Menjadi pelopor kegiatan yang berdampak dalam dan luar kampus.</li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col items-center">
-          <h2 className="text-black text-3xl font-bold mb-4">Video Profil</h2>
-          <div className="w-full aspect-video">
+      </section>
+        <div className="w-full flex flex-col items-center justify-center py-16 px-4 bg-gray-100">
+          <h2 className="text-black text-3xl font-bold mb-2 text-center">Video Profil HIMASI</h2>
+          <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
+          <div className="w-full max-w-4xl aspect-video">
             <iframe
               className="rounded-lg w-full h-full"
               src="https://www.youtube.com/embed/Bc1bTNvdPiY?si=W6-0_XhEbKjGc5Hb"
@@ -45,8 +72,9 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
         <section className="py-12 bg-gray-100">
+        <Fitur />
+        <br />
         <BeritaCarousel />
         <br />
         <br />
@@ -57,6 +85,7 @@ export default function Home() {
         <br />
         <br />
         <FAQAccordion /> 
+        <br />
         </section>
     </main>
   );

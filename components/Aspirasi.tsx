@@ -43,7 +43,8 @@ export default function AspirasiForm() {
   return (
     <section id="aspirasi" className="py-10 px-4 bg-gray-100">
     <div className="max-w-5xl mx-auto bg-white p-6 rounded-xl shadow-md font-center">
-        <h2 className="text-3xl font-bold text-center text-black mb-10">Aspirasi</h2>
+        <h2 className="text-3xl font-bold text-center text-black mb-2">Aspirasi</h2>
+        <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
 
         <div className="w-full md:w-1/2 border p-6 rounded-lg shadow-lg bg-white">
