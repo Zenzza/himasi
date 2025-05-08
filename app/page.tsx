@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import FAQAccordion from '@/components/FAQAccordion'; 
@@ -5,6 +6,11 @@ import QuoteBanner from "@/components/QuoteBanner";
 import BeritaCarousel from "@/components/BeritaCarousel";
 import AspirasiForm from "@/components/Aspirasi";
 import Fitur from "@/components/Fitur";
+
+<Head>
+  <title>HIMASI | Home</title>
+  <meta name="description" content="HOME HIMASI" />
+</Head>
 
 export default function Home() {
   return (
