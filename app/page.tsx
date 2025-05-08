@@ -36,7 +36,7 @@ export default function Home() {
               HIMASI adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi. Organisasi ini berfungsi sebagai jembatan yang menghubungkan mahasiswa dengan dunia akademik, industri, dan masyarakat melalui serangkaian program kerja yang terstruktur. HIMASI berupaya meningkatkan kompetensi akademik anggotanya melalui seminar, workshop, dsb...
             </p>
             <p className="text-black mt-4 text-xl font-bold text-center md:text-left">
-              "AKTIF, KREATIF, EFEKTIF"
+              &quot;AKTIF, KREATIF, EFEKTIF&quot;
             </p>
             <br />
             <a href="/tentang">

@@ -1,6 +1,6 @@
 'use client'
 
-import { UserRoundPlus, Shirt, Mic, ClipboardList, Trophy, Award, Megaphone, University , type Icon as LucideIcon } from 'lucide-react'
+import { UserRoundPlus, Shirt, Mic, ClipboardList, Trophy, Award, Megaphone, University } from 'lucide-react'
 import { JSX } from 'react'
 
 type Fitur = {
