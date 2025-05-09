@@ -4,14 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const metadata = {
-  title: "404 Not Found",
-  description: "NOT FOUND - HIMASI ISB Atma Luhur.",
-};
-
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-blue-950 text-white flex flex-col justify-center items-center px-6 text-center">
+    <div className="min-h-screen bg-blue-800 text-white flex flex-col justify-center items-center px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

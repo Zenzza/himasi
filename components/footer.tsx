@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -8,7 +9,9 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-4">
           <img src="/LogoHIMASI.png" alt="HIMASI Logo" className="w-36" />
           <p>
-            &quot;HIMASI&quot; adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi.
+            &quot;HIMASI&quot; adalah organisasi mahasiswa yang berada di bawah
+            naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis
+            Atma Luhur...
           </p>
         </div>
 
@@ -16,13 +19,23 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">INFO KAMPUS</h4>
           <ul className="space-y-2">
             {[
-              { label: "Info Beasiswa", href: "https://www.atmaluhur.ac.id/pendaftaran/info-beasiswa/" },
-              { label: "Kalender Akademik", href: "https://satupintu.atmaluhur.ac.id/pengumuman/upload/kalender%20akademik%2020242025.pdf" },
+              {
+                label: "Info Beasiswa",
+                href: "https://www.atmaluhur.ac.id/pendaftaran/info-beasiswa/",
+              },
+              {
+                label: "Kalender Akademik",
+                href: "https://satupintu.atmaluhur.ac.id/pengumuman/upload/kalender%20akademik%2020242025.pdf",
+              },
               { label: "Info Kuliah", href: "/info-kuliah" },
               { label: "Perpustakan", href: "https://lib.atmaluhur.ac.id/" },
-              { label: "Repository Kampus", href: "https://repository.atmaluhur.ac.id/" }
+              {
+                label: "Repository Kampus",
+                href: "https://repository.atmaluhur.ac.id/",
+              },
             ].map((item, idx) => (
-              <li key={idx}>
+              <li key={idx} className="flex items-center gap-2">
+                <MdOutlineKeyboardArrowRight className="text-xs" />
                 <Link href={item.href} className="hover:underline">
                   {item.label}
                 </Link>
@@ -40,9 +53,10 @@ export default function Footer() {
               { label: "MEDKOMINFO", href: "/kabinet/medkominfo" },
               { label: "Humas", href: "/kabinet/humas" },
               { label: "Bisnis Kreatif", href: "/kabinet/bisnis-kreatif" },
-              { label: "Penasihat", href: "/kabinet/penasihat" }
+              { label: "Penasihat", href: "/kabinet/penasihat" },
             ].map((item, idx) => (
-              <li key={idx}>
+              <li key={idx} className="flex items-center gap-2">
+                <MdOutlineKeyboardArrowRight className="text-xs" />
                 <Link href={item.href} className="hover:underline">
                   {item.label}
                 </Link>
@@ -59,15 +73,27 @@ export default function Footer() {
               { label: "Order Baju Jurusan", href: "/berita/order-baju" },
               { label: "Info Lomba", href: "/berita/lomba" },
               { label: "SI-Apresiasi", href: "/berita/si-apresiasi" },
-              { label: "ATMALUHUR Student Central", href: "https://bit.ly/atmaluhurstudentcentral" },
+              {
+                label: "ATMALUHUR Student Central",
+                href: "https://bit.ly/atmaluhurstudentcentral",
+              },
               { label: "What's on SI", href: "/berita/whats-on-si" },
               { label: "DIES NATALIS", href: "/berita/dies-natalis" },
-              { label: "Pendaftaran Mahasiswa Baru", href: "https://pmb.atmaluhur.ac.id/" },
-              { label: "ISB Atma Luhur", href: "https://atmaluhur.ac.id" }
+              {
+                label: "Pendaftaran Mahasiswa Baru",
+                href: "https://pmb.atmaluhur.ac.id/",
+              },
+              { label: "ISB Atma Luhur", href: "https://atmaluhur.ac.id" },
             ].map((item, idx) => (
-              <li key={idx}>
+              <li key={idx} className="flex items-center gap-2">
+                <MdOutlineKeyboardArrowRight className="text-xs" />
                 {item.href.startsWith("http") ? (
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
                     {item.label}
                   </a>
                 ) : (
@@ -82,15 +108,41 @@ export default function Footer() {
       </div>
 
       <div className="flex gap-3 text-lg mt-6">
-        <a href="https://www.tiktok.com/@himasi_bisniskreatif" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
-        <a href="https://www.facebook.com/profile.php?id=61555101788031" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-        <a href="https://www.instagram.com/himasi.atmaluhur/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        <a href="https://wa.me/6281280758000" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+        <a
+          href="https://www.tiktok.com/@himasi_bisniskreatif"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTiktok />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61555101788031"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebookF />
+        </a>
+        <a
+          href="https://www.instagram.com/himasi.atmaluhur/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://wa.me/6281280758000"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp />
+        </a>
       </div>
 
       <div className="border-t border-gray-300 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs">
         <p>© 2025 - HIMASI ISB Atma Luhur - All rights reserved</p>
-        <p className="md:text-right">Created by <Link href="/tentang/profil">Divisi MEDKOMINFO</Link></p>
+        <p className="md:text-right">
+          Created by <Link href="/tentang/profil">Divisi MEDKOMINFO</Link>
+        </p>
       </div>
     </footer>
   );

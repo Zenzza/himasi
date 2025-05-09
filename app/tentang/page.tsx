@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Head from 'next/head';
 import { FaMapMarkerAlt, FaGlobe, FaFacebook, FaWhatsapp, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 export const metadata = {
@@ -10,9 +9,6 @@ export const metadata = {
 export default function Tentang() {
   return (
     <div className="bg-white min-h-screen">
-      <Head>
-        <title>Tentang HIMASI</title>
-      </Head>
      <div className="relative">
         <div className="w-full h-[300px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url(/back1.jpg)' }}>
           <div className="relative text-center text-white z-10">
@@ -23,7 +19,8 @@ export default function Tentang() {
       </div> 
 
       <section className="bg-white py-12 px-4 md:px-30">
-        <h2 className="text-center text-2xl font-bold mb-6 text-blue-900">Tentang HIMASI</h2>
+        <h2 className="text-center text-2xl font-bold mb-3 text-blue-900">Tentang HIMASI</h2>
+        <div className="w-40 h-1 bg-blue-950 mx-auto mb-5 rounded-full" />
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="flex flex-col items-center">
             <Image src="/LogoHIMASI.png" width={200} height={200} alt="Logo HIMASI" className="mx-auto md:mx-0 text-center" />
@@ -53,10 +50,10 @@ export default function Tentang() {
       </section>
 
     <section className="bg-white py-12">
-      <h2 className="text-center text-2xl font-semibold italic text-blue-600 mb-10">
+      <h2 className="text-center text-2xl font-semibold italic text-blue-800 mb-3">
         HIMASI Conection Line
       </h2>
-
+      <div className="w-59 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center px-6 md:px-20">
 
         <div>
@@ -99,7 +96,7 @@ export default function Tentang() {
           <p className='text-black'>Himasi ISB ATMALUHUR</p>
         </div>
       </div>
-      <h3 className="text-center mt-12 font-semibold italic text-blue-800">GOOGLE MAPS</h3>
+      <h3 className="text-center mt-12 font-bold text-lg text-blue-800">GOOGLE MAPS</h3>
         <div className="w-full h-96 mt-4">
           <iframe
             src="https://maps.google.com/maps?q=ISB%20Atma%20Luhur&t=&z=13&ie=UTF8&iwloc=&output=embed"

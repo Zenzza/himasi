@@ -59,7 +59,8 @@ export default function BeritaPage() {
       </section>
 
       <section className="py-12 px-4 md:px-16 bg-white">
-        <h2 className="text-2xl font-bold text-center text-gray-700 mb-10">2025</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-700 mb-3">2025</h2>
+        <div className="w-15 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {beritaItems.map((item, index) => (
             <div
