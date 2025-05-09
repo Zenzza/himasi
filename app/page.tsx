@@ -1,4 +1,4 @@
-import Head from "next/head";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import FAQAccordion from '@/components/FAQAccordion'; 
@@ -7,10 +7,10 @@ import BeritaCarousel from "@/components/BeritaCarousel";
 import AspirasiForm from "@/components/Aspirasi";
 import Fitur from "@/components/Fitur";
 
-<Head>
-  <title>HIMASI | Home</title>
-  <meta name="description" content="HOME HIMASI" />
-</Head>
+export const metadata = {
+  title: "HIMASI ISB Atma Luhur",
+  description: "Menu Utama HIMASI ISB Atma Luhur.",
+};
 
 export default function Home() {
   return (
@@ -39,14 +39,14 @@ export default function Home() {
           <div>
             <h3 className="text-black text-3xl font-bold mb-4 text-center md:text-left">Apa itu HIMASI?</h3>
             <p className="text-black text-xl mb-6 text-center md:text-left">
-              HIMASI adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi. Organisasi ini berfungsi sebagai jembatan yang menghubungkan mahasiswa dengan dunia akademik, industri, dan masyarakat melalui serangkaian program kerja yang terstruktur. HIMASI berupaya meningkatkan kompetensi akademik anggotanya melalui seminar, workshop, dsb...
+              HIMASI adalah organisasi mahasiswa yang berada di bawah naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis Atma Luhur. Organisasi ini bertujuan untuk menjadi wadah pengembangan diri, kreativitas, dan keterampilan mahasiswa dalam bidang akademik, sosial, serta teknologi informasi. Organisasi ini berfungsi sebagai jembatan yang menghubungkan mahasiswa dengan dunia akademik, industri, dan masyarakat melalui serangkaian program kerja yang terstruktur. HIMASI berupaya meningkatkan kompetensi akademik anggotanya melalui seminar, workshop, dan diskusi, sekaligus mengasah keterampilan praktis melalui pelatihan teknis dan proyek kolaboratif...
             </p>
             <p className="text-black mt-4 text-xl font-bold text-center md:text-left">
               &quot;AKTIF, KREATIF, EFEKTIF&quot;
             </p>
             <br />
             <a href="/tentang">
-              <Button>Selengkapnya</Button>
+              <Button className="w-full">Selengkapnya</Button>
             </a>
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-md">

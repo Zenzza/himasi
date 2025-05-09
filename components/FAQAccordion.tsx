@@ -38,7 +38,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-blue-800 py-12 px-4 md:px-16 max-w-4xl mx-auto rounded-2xl">
+    <section className="bg-blue-800 py-8 px-10 md:px-16 max-w-4xl mx-auto md:rounded-2xl rounded-none">
       <h2 className="text-3xl font-bold mb-2">FAQ</h2>
       <h3 className="text-2xl font-extrabold mb-8">HIMASI ISB Atma Luhur</h3>
       <div className="divide-y divide-gray-300">

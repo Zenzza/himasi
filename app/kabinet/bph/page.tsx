@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "BPH - HIMASI ISB Atma Luhur",
+  description: "Badan Pengurus Harian HIMASI ISB Atma Luhur.",
+};
+
 import Image from "next/image";
 const pengurus = [
   {

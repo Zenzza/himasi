@@ -1,5 +1,9 @@
-import Image from "next/image";
+export const metadata = {
+  title: "Bisnis Kreatif - HIMASI ISB Atma Luhur",
+  description: "Divisi Bisnis Kreatif HIMASI ISB Atma Luhur.",
+};
 
+import Image from "next/image";
 export default function BisnisKreatifPage() {
   const ketua = {
     name: "Anindya Amanda Rizky",

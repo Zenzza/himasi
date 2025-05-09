@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "What's On SI - HIMASI ISB Atma Luhur",
+  description: "Secret HIMASI ISB Atma Luhur.",
+};
 export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">

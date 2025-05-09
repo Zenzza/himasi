@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "MEDKOMINFO - HIMASI ISB Atma Luhur",
+  description: "Divisi MEDKOMINFO HIMASI ISB Atma Luhur.",
+};
+
 import Image from "next/image"; 
 export default function MedkominfoPage() {
   const ketua = {

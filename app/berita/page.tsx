@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Berita - HIMASI ISB Atma Luhur",
+  description: "Berita HIMASI ISB Atma Luhur.",
+};
 export default function BeritaPage() {
   const beritaItems = [
     {

@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Kabinet - HIMASI ISB Atma Luhur",
+  description: "Kabinet HIMASI ISB Atma Luhur.",
+};
+
 export default function KabinetPage() {
   return (
     <div className="bg-white text-gray-800">

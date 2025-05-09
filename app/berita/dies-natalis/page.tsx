@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Dies Natalis - HIMASI ISB Atma Luhur",
+  description: "Dies Natalis HIMASI ISB Atma Luhur.",
+};
 export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">

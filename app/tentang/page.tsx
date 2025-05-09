@@ -2,6 +2,11 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { FaMapMarkerAlt, FaGlobe, FaFacebook, FaWhatsapp, FaInstagram, FaTiktok } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Tentang - HIMASI ISB Atma Luhur",
+  description: "Tentang HIMASI ISB Atma Luhur.",
+};
+
 export default function Tentang() {
   return (
     <div className="bg-white min-h-screen">

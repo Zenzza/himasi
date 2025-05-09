@@ -4,6 +4,11 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+export const metadata = {
+  title: "Secret - HIMASI ISB Atma Luhur",
+  description: "Secret HIMASI ISB Atma Luhur.",
+};
+
 export default function EasterEgg() {
   const [found, setFound] = useState(false)
 

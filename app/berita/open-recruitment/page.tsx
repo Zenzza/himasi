@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Recruitment - HIMASI ISB Atma Luhur",
+  description: "Open Recruitment HIMASI ISB Atma Luhur.",
+};
 export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">

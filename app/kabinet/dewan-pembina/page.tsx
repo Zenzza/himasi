@@ -1,5 +1,9 @@
-import Image from "next/image";
+export const metadata = {
+  title: "Dewan Pembina - HIMASI ISB Atma Luhur",
+  description: "Dewan Pembina HIMASI ISB Atma Luhur.",
+};
 
+import Image from "next/image";
 export default function DewanPembinaPage() {
     return (
       <main className="bg-[#f4f6fb] min-h-screen text-center">

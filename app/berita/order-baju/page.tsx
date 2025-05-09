@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Baju Jurusan - HIMASI ISB Atma Luhur",
+  description: "Order Baju Jurusan HIMASI ISB Atma Luhur.",
+};
 export default function BeritaPage() {
   return (
     <div className="bg-white text-gray-800">

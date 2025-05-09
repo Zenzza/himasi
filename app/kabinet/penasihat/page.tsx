@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Penasihat - HIMASI ISB Atma Luhur",
+  description: "Divsi Penasihat HIMASI ISB Atma Luhur.",
+};
+
 import Image from "next/image";
 
 export default function PenasihatPage() {

@@ -122,23 +122,23 @@ export default function Navbar() {
       </div>
 
 {isMobileMenuOpen && (
-  <div className="md:hidden bg-blue-950 flex flex-col items-center justify-center min-h-screen px-4 pt-4 pb-6 space-y-4 text-center">
-    <Link href="/" className="w-full text-center block hover:text-blue-400">Home</Link>
-    <Link href="/berita" className="w-full text-center block hover:text-blue-400">Berita</Link>
+  <div className="md:hidden bg-blue-800 items-left min-h-60vh px-4 pt-4 pb-6 space-y-4 text-left">
+    <Link href="/" className="w-full text-left block hover:text-blue-400">Home</Link>
+    <Link href="/berita" className="w-full text-left block hover:text-blue-400">Berita</Link>
 
     <div className="space-y-2">
-      <Link href="/kabinet" className="w-full text-center block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
+      <Link href="/kabinet" className="w-full text-left block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
       <div className="pl-4 space-y-1">
-        <Link href="/kabinet/dewan-pembina" className="w-full text-center block text-sm hover:text-blue-400">Dewan Pembina</Link>
-        <Link href="/kabinet/bph" className="w-full text-center block text-sm hover:text-blue-400">BPH</Link>
-        <Link href="/kabinet/medkominfo" className="w-full text-center block text-sm hover:text-blue-400">MEDKOMINFO</Link>
-        <Link href="/kabinet/humas" className="w-full text-center block text-sm hover:text-blue-400">Humas</Link>
-        <Link href="/kabinet/bisnis-kreatif" className="w-full text-center block text-sm hover:text-blue-400">Bisnis Kreatif</Link>
-        <Link href="/kabinet/penasihat" className="w-full text-center block text-sm hover:text-blue-400">Penasihat</Link>
+        <Link href="/kabinet/dewan-pembina" className="w-full text-left block text-sm hover:text-blue-400">Dewan Pembina</Link>
+        <Link href="/kabinet/bph" className="w-full text-left block text-sm hover:text-blue-400">BPH</Link>
+        <Link href="/kabinet/medkominfo" className="w-full text-left block text-sm hover:text-blue-400">MEDKOMINFO</Link>
+        <Link href="/kabinet/humas" className="w-full text-left block text-sm hover:text-blue-400">Humas</Link>
+        <Link href="/kabinet/bisnis-kreatif" className="w-full text-left block text-sm hover:text-blue-400">Bisnis Kreatif</Link>
+        <Link href="/kabinet/penasihat" className="w-full text-left block text-sm hover:text-blue-400">Penasihat</Link>
       </div>
     </div>
 
-    <Link href="/tentang" className="w-full text-center block hover:text-blue-400">Tentang Himasi</Link>
+    <Link href="/tentang" className="w-full text-left block hover:text-blue-400">Tentang Himasi</Link>
   </div>
 )}
     </nav>

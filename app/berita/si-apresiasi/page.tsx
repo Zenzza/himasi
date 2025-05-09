@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "SI-Apresiasi - HIMASI ISB Atma Luhur",
+  description: "Secret HIMASI ISB Atma Luhur.",
+};
 export default function BeritaPage() {
   const beritaItems = [
     {
@@ -17,7 +21,6 @@ export default function BeritaPage() {
           <h1 className="text-4xl font-bold pt-8">SI -  Apresiasi</h1>
           <p className="text-xl mt-4">Apresiasi terhadap Mahasiswa SISTEM INFORMASI</p>
       </section>
-
       <section className="py-12 px-4 md:px-16 bg-white">
         <h2 className="text-2xl font-bold text-center text-gray-700 mb-10">2025</h2>
         <div className="grid md:grid-cols-1 gap-8 max-w-6xl mx-auto">
