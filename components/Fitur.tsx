@@ -71,7 +71,7 @@ export default function FeaturesSection() {
         {features.map((feature, i) => (
           <div
             key={i}
-            className="bg-gradient-to-t from-blue-950 via-blue-800 to-blue-400 rounded-2xl shadow-md p-6 flex flex-col items-center justify-center space-y-2 transition hover:scale-[1.02]"
+            className="bg-gradient-to-t from-blue-950 via-blue-800 to-blue-400 rounded-2xl shadow-md p-6 flex flex-col items-center justify-center space-y-2 transition hover:scale-[1.02] cursor-pointer"
           >
             <div className="text-white">{feature.icon}</div>
             <h3 className="text-xl font-bold text-white">{feature.title}</h3>

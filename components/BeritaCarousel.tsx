@@ -11,6 +11,12 @@ import { useRef } from 'react'
 
 const beritaList = [
   {
+    title: 'HIMASI GAHESI 2025',
+    desc: 'Pada tahun ini, HIMASI menggelar kegiatan healing bersama bertajuk HIMASI GAHESI 2025 — Gak Healing Sinting! 🎉 Kegiatan ini menjadi wadah bagi seluruh anggota HIMASI untuk sejenak rehat dari rutinitas akademik dan mempererat kebersamaan dalam suasana santai namun tetap positif.',
+    image: '/HIMASI_GAHESI_2025.jpg',
+    link: '/berita',
+  },
+  {
     title: 'SI-Apresiasi: Finalis DUTA BAHASA Provinsi Kep. Bangka Belitung 2025',
     desc: 'Keluarga besar Himpunan Mahasiswa Sistem Informasi mengucapkan selamat dan apresiasi yang sebesar-besarnya kepada: Zahra Azaria...',
     image: '/Feed IG HIMASI SIAPRESIASI.png',
@@ -20,19 +26,13 @@ const beritaList = [
     title: 'PEMENANG Kompetisi Design Logo 25th DIES NATALIS ISB Atma Luhur',
     desc: '🔥 Inilah Sang Juara! 🔥 Dengan penuh kebanggaan, kami umumkan Marvel Luzniky dan Valentina dari SMK BAKTI PANGKALPINANG sebagai Pemenang ...',
     image: '/PemenangKDL.jpg',
-    link: '/berita/pemenang-logo',
+    link: '/berita',
   },
   {
     title: 'Dokumentasi HIMASI BERBAGI 2025',
     desc: 'HIMASI BERBAGI adalah program sosial dari HIMASI ISB Atma Luhur yang dilaksanakan dalam semangat kepedulian. Acara ini sukses dilaksanakan berkat partisipasi dari panitia, donatur dan sponsor yang...',
     image: '/COVER 2.png',
-    link: '/berita/dokumentasi-berbagi',
-  },
-  {
-    title: 'HIMASI BERBAGI 2025',
-    desc: 'Kegiatan berbagi selama bulan Ramadan dengan pengumpulan dan distribusi donasi kepada masyarakat membutuhkanProgram sosial dari HIMASI ISB Atma Luhur yang bertujuan memenebarkan kebaikan di bulan Ramadan bersama masyarakat. Dana untuk kegiatan ini  ... ',
-    image: '/FEED IG HIMASI BERBAGI (FIX).png',
-    link: '/berita/himasi-berbagi',
+    link: '/berita',
   },
 ]
 

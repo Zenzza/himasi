@@ -48,7 +48,7 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Struktural HIMASI</h4>
           <ul className="space-y-2">
             {[
-              { label: "Dewan Pembimbing", href: "/kabinet/dewan-pembimbing" },
+              { label: "Dewan Pembina", href: "/kabinet/dewan-pembina" },
               { label: "BPH", href: "/kabinet/bph" },
               { label: "MEDKOMINFO", href: "/kabinet/medkominfo" },
               { label: "Humas", href: "/kabinet/humas" },

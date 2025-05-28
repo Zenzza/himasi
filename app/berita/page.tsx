@@ -8,6 +8,12 @@ export const metadata = {
 export default function BeritaPage() {
   const beritaItems = [
     {
+      title: 'HIMASI GAHESI 2025',
+      desc: 'Pada tahun ini, HIMASI menggelar kegiatan healing bersama bertajuk HIMASI GAHESI 2025 — Gak Healing Sinting! 🎉 Kegiatan ini menjadi wadah bagi seluruh anggota HIMASI untuk sejenak rehat dari rutinitas akademik dan mempererat kebersamaan dalam suasana santai namun tetap positif.',
+      img: '/HIMASI_GAHESI_2025.jpg',
+      link: 'https://www.instagram.com/p/DKLip7XTAxl/',
+    },
+    {
       title: "SI-Apresiasi : Finalis DUTA BAHASA Provinsi Kep. Bangka Belitung 2025",
       img: "/Feed IG HIMASI SIAPRESIASI.png",
       desc: `Keluarga besar Himpunan Mahasiswa Sistem Informasi mengucapkan selamat dan apresiasi yang sebesar-besarnya kepada: 𝗭𝗮𝗵𝗿𝗮 𝗔𝘇𝗮𝗿𝗶𝗮 Sebagai 𝗙𝗶𝗻𝗮𝗹𝗶𝘀 𝗗𝘂𝘁𝗮 𝗕𝗮𝗵𝗮𝘀𝗮 𝗣𝗿𝗼𝘃𝗶𝗻𝘀𝗶 𝗞𝗲𝗽𝘂𝗹𝗮𝘂𝗮𝗻 𝗕𝗮𝗻𝗴𝗸𝗮 𝗕𝗲𝗹𝗶𝘁𝘂𝗻𝗴 𝗧𝗮𝗵𝘂𝗻 𝟮𝟬𝟮𝟱`,
