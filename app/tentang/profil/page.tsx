@@ -25,7 +25,7 @@ export default function EasterEgg() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setFound(true)}
-            className="mt-4 bg-white text-black font-semibold py-2 px-6 rounded-lg  hover:bg-lime-400 transition"
+            className="mt-4 bg-white text-black font-semibold py-2 px-6 rounded-lg  hover:bg-white transition"
           >
           </motion.button>
         ) : (

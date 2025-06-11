@@ -96,8 +96,8 @@ export default function Navbar() {
                     <Image
                       src="/Placeholder.jpg"
                       alt="fotokabinet"
-                      width={230}
-                      height={200}
+                      width={215}
+                      height={170}
                       className="rounded-md mb-2 object-cover"
                     />
                     <p className="font-semibold text-black text-sm">Kabinet RAKSABHINAYA</p>
