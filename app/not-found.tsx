@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-blue-800 text-white flex flex-col justify-center items-center px-6 text-center">
+    <div className="min-h-screen bg-gray-100 text-white flex flex-col justify-center items-center px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,9 +20,9 @@ export default function NotFound() {
           height={80}
           className="mb-6"
         />
-        <h1 className="text-6xl font-bold mb-4">404</h1>
-        <h2 className="text-2xl font-semibold mb-2">Halaman tidak ditemukan</h2>
-        <p className="text-gray-300 mb-6 max-w-md">
+        <h1 className="text-6xl font-bold mb-4 text-black">404</h1>
+        <h2 className="text-2xl font-semibold mb-2 text-black">Halaman tidak ditemukan</h2>
+        <p className="text-black mb-6 max-w-md">
           Maaf, halaman yang kamu cari tidak tersedia atau telah dipindahkan.
         </p>
 

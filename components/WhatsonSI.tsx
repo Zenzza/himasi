@@ -1,86 +1,80 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
+import { FaPlay } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { Play } from "lucide-react";
 
-interface UploadedVideoCardProps {
-  videoSrc: string;
+type VideoCardProps = {
   title: string;
-}
+  videoId: string;
+};
 
-export default function UploadedVideoCard({ videoSrc, title }: UploadedVideoCardProps) {
+export default function VideoCard({ title, videoId }: VideoCardProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [thumbnail, setThumbnail] = useState<string | null>(null);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
 
-  useEffect(() => {
-    const generateThumbnail = async () => {
-      const video = document.createElement("video");
-      video.src = videoSrc;
-      video.crossOrigin = "anonymous";
-      video.currentTime = 1;
-      video.muted = true;
-      video.playsInline = true;
+  // Deteksi otomatis jika video Shorts berdasarkan URL ID (kasus kamu bisa custom nanti juga)
+  const isShorts = typeof videoId === "string" && videoId.length <= 15;
 
-      video.addEventListener("loadeddata", () => {
-        const canvas = document.createElement("canvas");
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        const ctx = canvas.getContext("2d");
-        if (ctx) {
-          ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-          setThumbnail(canvas.toDataURL("image/jpeg"));
-        }
-      });
-    };
-    generateThumbnail();
-  }, [videoSrc]);
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
   return (
     <>
       <div
-        className="relative w-full max-w-xs rounded-xl overflow-hidden shadow-lg cursor-pointer group"
         onClick={() => setIsOpen(true)}
+        className="relative group cursor-pointer overflow-hidden rounded-xl shadow-md"
       >
-        {thumbnail ? (
-          <img src={thumbnail} alt="Video thumbnail" className="w-full h-150 object-cover" />
-        ) : (
-          <div className="w-full h-48 bg-gray-200 animate-pulse" />
-        )}
+        <img
+          src={thumbnailUrl}
+          alt={title}
+          className={`w-full object-cover transition duration-300 ${
+            isShorts ? "aspect-[9/16]" : "aspect-video"
+          } group-hover:brightness-75`}
+        />
 
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-          <div className="flex flex-col items-center">
-            <Play size={40} className="text-white mb-2" />
-            <span className="text-white text-sm font-semibold">{title}</span>
+        {/* Tombol Play */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="bg-white/80 rounded-full p-4 text-black hover:scale-110 transition">
+            <FaPlay className="text-xl" />
           </div>
+          <p className="mt-2 text-white font-semibold drop-shadow">{title}</p>
         </div>
       </div>
 
+      {/* Modal */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
             onClick={() => setIsOpen(false)}
           >
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-black rounded-xl overflow-hidden w-full max-w-md shadow-lg"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
               onClick={(e) => e.stopPropagation()}
+              className={`w-full ${
+                isShorts ? "max-w-xs md:max-w-sm" : "max-w-4xl"
+              }`}
             >
-              <video
-                ref={videoRef}
-                src={videoSrc}
-                controls
-                autoPlay
-                className="w-full h-auto rounded-xl"
-              />
+              <div
+                className={`rounded-xl overflow-hidden bg-black ${
+                  isShorts ? "aspect-[9/16]" : "aspect-video"
+                }`}
+                style={{ maxHeight: "90vh" }} // Batasi tinggi modal
+              >
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                  title={title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
             </motion.div>
+
           </motion.div>
         )}
       </AnimatePresence>

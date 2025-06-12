@@ -51,7 +51,7 @@ const pengurus = [
           {pengurus.map((section, idx) => (
             <div key={idx}>
               <h2 className="text-xl font-bold text-black">{section.title}</h2><br />
-              <hr className="max-w-sm mx-auto border-black mb-10" />
+              <div className="w-100 h-1 bg-blue-950 mx-auto mb-5 rounded-full" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto pb-12">
               {section.members.map((member, idx) => (
                 <div key={idx} className="flex flex-col items-center">

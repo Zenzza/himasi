@@ -73,7 +73,6 @@ export default function Home() {
               className="rounded-lg w-full h-full"
               src="https://www.youtube.com/embed/Bc1bTNvdPiY?si=W6-0_XhEbKjGc5Hb"
               title="Video Profil HIMASI"
-              frameBorder="0"
               allowFullScreen
             />
           </div>

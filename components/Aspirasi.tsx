@@ -46,7 +46,18 @@ export default function AspirasiForm() {
         <h2 className="text-3xl font-bold text-center text-black mb-2">Aspirasi</h2>
         <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
-
+        <div className="w-full md:w-1/2">
+          <p className="text-black text-lg">
+          Suaramu penting untuk kami! <br />
+          Form ini disediakan untuk seluruh mahasiswa Sistem Informasi yang ingin menyampaikan kritik, saran, ide, maupun aspirasi lainnya terkait kegiatan, pelayanan, atau hal-hal yang ingin ditingkatkan di HIMASI dan Prodi SI. <br /> Semua masukan akan kami tampung dan bahas untuk menciptakan HIMASI dan Prodi SI yang lebih baik, terbuka, dan adaptif! 
+          <br />
+          Kerahasiaan data akan dijaga. Kamu bisa mengisi secara anonim atau mencantumkan identitas jika bersedia dihubungi lebih lanjut.
+          </p>
+          <br />
+          <p className="text-black text-lg">
+              - HIMASI ISB Atma Luhur
+          </p>
+        </div>
         <div className="w-full md:w-1/2 border p-6 rounded-lg shadow-lg bg-white">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -106,19 +117,6 @@ export default function AspirasiForm() {
 
           {submitted && <p className="text-green-600">✅ Aspirasi berhasil dikirim!</p>}
         </form>
-      </div>
-
-      <div className="w-full md:w-1/2">
-        <p className="text-black text-lg">
-        Suaramu penting untuk kami! <br />
-        Form ini disediakan untuk seluruh mahasiswa Sistem Informasi yang ingin menyampaikan kritik, saran, ide, maupun aspirasi lainnya terkait kegiatan, pelayanan, atau hal-hal yang ingin ditingkatkan di HIMASI dan Prodi SI. <br /> Semua masukan akan kami tampung dan bahas untuk menciptakan HIMASI dan Prodi SI yang lebih baik, terbuka, dan adaptif! 
-        <br />
-        Kerahasiaan data akan dijaga. Kamu bisa mengisi secara anonim atau mencantumkan identitas jika bersedia dihubungi lebih lanjut.
-        </p>
-        <br />
-        <p className="text-black text-lg">
-            - HIMASI ISB Atma Luhur
-        </p>
       </div>
     </div>
   </div>

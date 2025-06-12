@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-4">
           <img src="/LogoHIMASI.png" alt="HIMASI Logo" className="w-36" />
           <p>
-            &quot;HIMASI&quot; adalah organisasi mahasiswa yang berada di bawah
+            HIMASI ISB Atma Luhur adalah organisasi mahasiswa yang berada di bawah
             naungan Program Studi Sistem Informasi di Institut Sains dan Bisnis
-            Atma Luhur...
+            Atma Luhur Pangkalpinang ...
           </p>
         </div>
 
@@ -19,20 +19,11 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">INFO KAMPUS</h4>
           <ul className="space-y-2">
             {[
-              {
-                label: "Info Beasiswa",
-                href: "https://www.atmaluhur.ac.id/pendaftaran/info-beasiswa/",
-              },
-              {
-                label: "Kalender Akademik",
-                href: "https://satupintu.atmaluhur.ac.id/pengumuman/upload/kalender%20akademik%2020242025.pdf",
-              },
+              { label: "Info Beasiswa", href: "https://www.atmaluhur.ac.id/pendaftaran/info-beasiswa/" },
+              { label: "Kalender Akademik",href: "https://satupintu.atmaluhur.ac.id/pengumuman/upload/kalender%20akademik%2020242025.pdf" },
               { label: "Info Kuliah", href: "/info-kuliah" },
               { label: "Perpustakan", href: "https://lib.atmaluhur.ac.id/" },
-              {
-                label: "Repository Kampus",
-                href: "https://repository.atmaluhur.ac.id/",
-              },
+              { label: "Repository Kampus", href: "https://repository.atmaluhur.ac.id/" },
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-2">
                 <MdOutlineKeyboardArrowRight className="text-xs" />
@@ -73,16 +64,10 @@ export default function Footer() {
               { label: "Order Baju Jurusan", href: "/berita/order-baju" },
               { label: "Info Lomba", href: "/berita/lomba" },
               { label: "SI-Apresiasi", href: "/berita/si-apresiasi" },
-              {
-                label: "ATMALUHUR Student Central",
-                href: "https://bit.ly/atmaluhurstudentcentral",
-              },
+              { label: "ATMALUHUR Student Central", href: "https://bit.ly/atmaluhurstudentcentral" },
               { label: "What's on SI", href: "/berita/whats-on-si" },
               { label: "DIES NATALIS", href: "/berita/dies-natalis" },
-              {
-                label: "Pendaftaran Mahasiswa Baru",
-                href: "https://pmb.atmaluhur.ac.id/",
-              },
+              { label: "Pendaftaran Mahasiswa Baru", href: "https://pmb.atmaluhur.ac.id/" },
               { label: "ISB Atma Luhur", href: "https://atmaluhur.ac.id" },
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-2">
