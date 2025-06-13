@@ -30,8 +30,7 @@ export default function VideoCard({ title, videoId }: VideoCardProps) {
             isShorts ? "aspect-[9/16]" : "aspect-video"
           } group-hover:brightness-75`}
         />
-
-        {/* Tombol Play */}
+        
         <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
           <div className="bg-white/80 rounded-full p-4 text-black hover:scale-110 transition">
             <FaPlay className="text-xl" />
@@ -40,7 +39,6 @@ export default function VideoCard({ title, videoId }: VideoCardProps) {
         </div>
       </div>
 
-      {/* Modal */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -63,7 +61,7 @@ export default function VideoCard({ title, videoId }: VideoCardProps) {
                 className={`rounded-xl overflow-hidden bg-black ${
                   isShorts ? "aspect-[9/16]" : "aspect-video"
                 }`}
-                style={{ maxHeight: "90vh" }} // Batasi tinggi modal
+                style={{ maxHeight: "90vh" }} 
               >
                 <iframe
                   src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}

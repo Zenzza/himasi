@@ -4,7 +4,7 @@ export const metadata = {
 };
 import VideoCard from "@/components/WhatsonSI";
 
-export default function BeritaPage() {
+export default function WOSPage() {
   return (
     <div className="bg-white text-gray-800">
       <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">

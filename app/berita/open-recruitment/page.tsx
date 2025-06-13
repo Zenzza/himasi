@@ -2,7 +2,7 @@ export const metadata = {
   title: "Recruitment - HIMASI ISB Atma Luhur",
   description: "Open Recruitment HIMASI ISB Atma Luhur.",
 };
-export default function BeritaPage() {
+export default function OPRECPage() {
   return (
     <div className="bg-white text-gray-800">
       <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">

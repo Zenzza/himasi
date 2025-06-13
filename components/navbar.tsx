@@ -5,6 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { FiChevronRight } from 'react-icons/fi'
+
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -159,7 +161,6 @@ export default function Navbar() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.5 }}
@@ -169,7 +170,6 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             />
 
-            {/* Sidebar */}
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
@@ -177,25 +177,36 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="fixed top-0 right-0 h-full w-64 bg-blue-900 px-4 pt-6 pb-6 space-y-4 text-left z-50 shadow-lg md:hidden"
             >
-              {/* Close Button */}
+
               <div className="flex justify-end">
                 <button onClick={() => setIsMobileMenuOpen(false)}>
                   <X size={24} className="text-white" />
                 </button>
               </div>
 
-              {/* Links */}
               <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block hover:text-blue-400">Home</Link>
               <Link href="/berita" onClick={() => setIsMobileMenuOpen(false)} className="block hover:text-blue-400">Berita</Link>
               <div className="space-y-2">
                 <Link href="/kabinet" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
                 <div className="pl-4 space-y-1">
-                  <Link href="/kabinet/dewan-pembina" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400">Dewan Pembina</Link>
-                  <Link href="/kabinet/bph" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400">BPH</Link>
-                  <Link href="/kabinet/medkominfo" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400">MEDKOMINFO</Link>
-                  <Link href="/kabinet/humas" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400">Humas</Link>
-                  <Link href="/kabinet/bisnis-kreatif" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400">Bisnis Kreatif</Link>
-                  <Link href="/kabinet/penasihat" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400">Penasihat</Link>
+                  <Link href="/kabinet/dewan-pembina" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                    <FiChevronRight /> Dewan Pembina
+                  </Link>
+                  <Link href="/kabinet/bph" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                    <FiChevronRight /> BPH
+                  </Link>
+                  <Link href="/kabinet/medkominfo" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                    <FiChevronRight /> MEDKOMINFO
+                  </Link>
+                  <Link href="/kabinet/humas" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                    <FiChevronRight /> Humas
+                  </Link>
+                  <Link href="/kabinet/bisnis-kreatif" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                    <FiChevronRight /> Bisnis Kreatif
+                  </Link>
+                  <Link href="/kabinet/penasihat" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                    <FiChevronRight /> Penasihat
+                  </Link>
                 </div>
               </div>
               <Link href="/tentang" onClick={() => setIsMobileMenuOpen(false)} className="block hover:text-blue-400">Tentang Himasi</Link>
@@ -203,8 +214,6 @@ export default function Navbar() {
           </>
         )}
       </AnimatePresence>
-
-
     </nav>
   );
 }

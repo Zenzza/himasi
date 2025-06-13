@@ -2,7 +2,7 @@ export const metadata = {
   title: "Dies Natalis - HIMASI ISB Atma Luhur",
   description: "Dies Natalis HIMASI ISB Atma Luhur.",
 };
-export default function BeritaPage() {
+export default function DiesNatalisPage() {
   return (
     <div className="bg-white text-gray-800">
       <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">

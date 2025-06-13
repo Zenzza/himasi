@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 
-export default function EasterEgg() {
+export default function Zenza() {
   const [found, setFound] = useState(false)
 
   return (
