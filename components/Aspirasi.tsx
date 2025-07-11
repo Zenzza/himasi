@@ -59,7 +59,7 @@ export default function AspirasiForm() {
               Semua masukan akan kami tampung dan bahas untuk menciptakan HIMASI dan Prodi SI yang lebih baik,
               terbuka, dan adaptif! Kerahasiaan data akan dijaga. Kamu bisa mengisi secara anonim atau mencantumkan identitas jika bersedia dihubungi lebih lanjut.
             </p>
-            <p className="font-semibold">- HIMASI ISB Atma Luhur</p>
+            <p className="font-semibold">~ HIMASI ISB Atma Luhur</p>
           </div>
 
           <div className="w-full md:w-1/2 border p-6 rounded-lg shadow-lg bg-white">

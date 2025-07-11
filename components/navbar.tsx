@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronRight } from 'react-icons/fi'
+import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 
 export default function Navbar() {
@@ -50,7 +51,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 text-white transition-all duration-300 
+      className={`fixed top-0 left-0 w-full z-50 text-white transition-all duration-300 
         ${isScrolled ? 'h-14 bg-gradient-to-b from-blue-950 to-blue-800 shadow-md' : 'h-20 bg-gradient-to-b from-blue-950 to-blue-800 shadow-lg'}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +72,7 @@ export default function Navbar() {
                 isScrolled ? 'text-base' : 'text-xl'
               }`}
             >
-              HIMASI ISB ATMA LULUR
+              HIMASI ISB ATMA LUHUR
             </Link>
           </div>
 
@@ -83,6 +84,8 @@ export default function Navbar() {
           >
             <Link href="/" className="hover:text-blue-400">Home</Link>
             <Link href="/berita" className="hover:text-blue-400">Berita</Link>
+            <Link href="/berita/koneksi" className="hover:text-blue-400">KONEKSI</Link>
+            <Link href="/berita/whats-on-si" className="hover:text-blue-400">WOS</Link>
 
             <div
               className="relative group"
@@ -157,7 +160,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
@@ -169,47 +171,62 @@ export default function Navbar() {
               className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
-
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.3 }}
-              className="fixed top-0 right-0 h-full w-64 bg-blue-900 px-4 pt-6 pb-6 space-y-4 text-left z-50 shadow-lg md:hidden"
+              className="fixed top-0 right-0 h-full w-64 bg-blue-900 px-4 pt-6 pb-6 flex flex-col justify-between text-left z-50 shadow-lg md:hidden"
             >
-
-              <div className="flex justify-end">
-                <button onClick={() => setIsMobileMenuOpen(false)}>
-                  <X size={24} className="text-white" />
-                </button>
-              </div>
-
-              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block hover:text-blue-400">Home</Link>
-              <Link href="/berita" onClick={() => setIsMobileMenuOpen(false)} className="block hover:text-blue-400">Berita</Link>
-              <div className="space-y-2">
-                <Link href="/kabinet" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
-                <div className="pl-4 space-y-1">
-                  <Link href="/kabinet/dewan-pembina" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
-                    <FiChevronRight /> Dewan Pembina
-                  </Link>
-                  <Link href="/kabinet/bph" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
-                    <FiChevronRight /> BPH
-                  </Link>
-                  <Link href="/kabinet/medkominfo" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
-                    <FiChevronRight /> MEDKOMINFO
-                  </Link>
-                  <Link href="/kabinet/humas" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
-                    <FiChevronRight /> Humas
-                  </Link>
-                  <Link href="/kabinet/bisnis-kreatif" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
-                    <FiChevronRight /> Bisnis Kreatif
-                  </Link>
-                  <Link href="/kabinet/penasihat" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
-                    <FiChevronRight /> Penasihat
-                  </Link>
+              <div>
+                <div className="flex justify-end mb-4">
+                  <button onClick={() => setIsMobileMenuOpen(false)}>
+                    <X size={24} className="text-white" />
+                  </button>
                 </div>
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">Home</Link>
+                <Link href="/berita" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">Berita</Link>
+                <Link href="/berita/koneksi" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">KONEKSI</Link>
+                <Link href="/berita/whats-on-si" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">WHAT's on SI</Link>
+                <div className="space-y-2 mt-2">
+                  <Link href="/kabinet" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
+                  <div className="pl-4 space-y-1">
+                    <Link href="/kabinet/dewan-pembina" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                      <FiChevronRight /> Dewan Pembina
+                    </Link>
+                    <Link href="/kabinet/bph" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                      <FiChevronRight /> BPH
+                    </Link>
+                    <Link href="/kabinet/medkominfo" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                      <FiChevronRight /> MEDKOMINFO
+                    </Link>
+                    <Link href="/kabinet/humas" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                      <FiChevronRight /> Humas
+                    </Link>
+                    <Link href="/kabinet/bisnis-kreatif" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                      <FiChevronRight /> Bisnis Kreatif
+                    </Link>
+                    <Link href="/kabinet/penasihat" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2 text-sm hover:text-blue-400">
+                      <FiChevronRight /> Penasihat
+                    </Link>
+                  </div>
+                </div>
+                <Link href="/tentang" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">Tentang Himasi</Link>
               </div>
-              <Link href="/tentang" onClick={() => setIsMobileMenuOpen(false)} className="block hover:text-blue-400">Tentang Himasi</Link>
+              <div className="flex justify-around text-xl text-white pt-4 border-t border-white">
+                <a href="https://www.tiktok.com/@himasi_bisniskreatif" target="_blank" rel="noopener noreferrer">
+                  <FaTiktok className="hover:text-blue-400" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61555101788031" target="_blank" rel="noopener noreferrer">
+                  <FaFacebookF className="hover:text-blue-400" />
+                </a>
+                <a href="https://www.instagram.com/himasi.atmaluhur/" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram className="hover:text-blue-400" />
+                </a>
+                <a href="https://wa.me/6281280758000" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp className="hover:text-blue-400" />
+                </a>
+              </div>
             </motion.div>
           </>
         )}

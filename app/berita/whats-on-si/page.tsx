@@ -1,26 +1,41 @@
-export const metadata = {
-  title: "What's On SI - HIMASI ISB Atma Luhur",
-  description: "Secret HIMASI ISB Atma Luhur.",
-};
+import Image from "next/image";
+import Link from "next/link";
 import VideoCard from "@/components/WhatsonSI";
 
 export default function WOSPage() {
   return (
-    <div className="bg-white text-gray-800">
-      <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">
-          <h1 className="text-4xl font-bold pt-16">What&apos;s On SI?</h1>
-          <p className="text-xl mt-4">FAQ dan Fun Fact around SISTEM INFORMASI</p>
-      </section>
-      <section className="max-w-5xl mx-auto px-6 py-12 text-center">
-        <div className="bg-gray-100 p-10 rounded-lg shadow-md">
-            <h2 className="text-3xl font-bold text-blue-900">ORIGINAL SERIES</h2>
-            <br />
-            <div className="w-60 h-1 bg-blue-950 mx-auto mb-5 rounded-full" />
-            <p className="text-xl mt-2 text-blue-950">What&apos;s on SI adalah orginal series yang dibuat dan dikelola oleh divisi MEDKOMINFO dengan tujuan menyebarkan informasi tentang Sistem Informasi serta dapat menambah ilmu seputar SI kepada khalayak umum.</p>
+    <main>
+      <section className="relative h-190 flex items-center">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/back1.jpg"
+            alt="WOS Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+
+        <div className="relative z-10 px-6 md:pl-40 max-w-2xl text-white space-y-4">
+          <h1 className="text-5xl md:text-6xl font-bold">What's on SI?</h1>
+          <p className="text-lg md:text-xl leading-relaxed">
+            Konten QnA seru dari HIMASI yang ngebahas pertanyaan-pertanyaan seputar dunia Sistem Informasi! Mulai dari hal yang sering bikin bingung, mitos-mitos di dunia tech, sampai insight dari sudut pandang mahasiswa SI
+          </p>
+          <Link
+            href="#konten"
+            className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 transition px-6 py-2 rounded text-white font-medium"
+          >
+            Explore →
+          </Link>
         </div>
       </section>
-        <section className="max-w-5xl mx-auto px-6 py-12 text-center">
-          <div className="grid md:grid-cols-3 gap-6 p-6 bg-white">
+        <section id="konten" className="max-w-5xl mx-auto px-6 py-12 text-center">
+          <h2 className="text-2xl font-bold text-center text-gray-700 mb-3">
+            Season 1
+          </h2>
+          <div className="w-20 h-1 bg-blue-950 mx-auto mb-5 rounded-full" />
+          <div className="grid md:grid-cols-3 gap-6 p-6 bg-gray-100">
             <VideoCard
               title="WOS Epsiode 1 : Apa sih yang dipelajari di SI?"
               videoId="dQw4w9WgXcQ" 
@@ -42,12 +57,12 @@ export default function WOSPage() {
               videoId="dQw4w9WgXcQ" 
             />
             <VideoCard
-              title="WOS Epsiode 6 : Udah ada capek mikir title"
+              title="WOS Epsiode 6 : Udah ah, capek mikir title"
               videoId="dQw4w9WgXcQ" 
             />
             </div>
         </section>
-    </div>
+      </main>
   );
 }
 

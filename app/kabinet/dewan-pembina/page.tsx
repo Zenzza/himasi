@@ -26,7 +26,7 @@ export default function DewanPembinaPage() {
         </div>
       </div>
 
-      <section className="max-w-4xl mx-auto px-4 py-10">
+      <section className="max-w-4xl mx-auto px-4 py-8">
         <p className="text-gray-700 leading-relaxed">
           Dewan Pembina (DP) adalah sebuah struktur dalam organisasi HIMASI yang bertugas memberikan bimbingan,
           arahan, dan dukungan kepada pengurus HIMASI. Dewan Pembina merupakan salah satu pilar penting dalam organisasi
@@ -36,7 +36,7 @@ export default function DewanPembinaPage() {
         </p>
       </section>
 
-      <hr className="max-w-sm mx-auto border-gray-300 mb-10" />
+      <div className="w-100 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto px-4 pb-20">
         <div className="flex flex-col items-center">

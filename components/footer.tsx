@@ -62,10 +62,10 @@ export default function Footer() {
             {[
               { label: "Open Recruitment", href: "/berita/open-recruitment" },
               { label: "Order Baju Jurusan", href: "/berita/order-baju" },
-              { label: "Info Lomba", href: "/berita/lomba" },
+              { label: "KONEKSI", href: "/berita/koneksi" },
               { label: "SI-Apresiasi", href: "/berita/si-apresiasi" },
-              { label: "ATMALUHUR Student Central", href: "https://bit.ly/atmaluhurstudentcentral" },
               { label: "What's on SI", href: "/berita/whats-on-si" },
+              { label: "ATMALUHUR Student Central", href: "https://bit.ly/atmaluhurstudentcentral" },
               { label: "DIES NATALIS", href: "/berita/dies-natalis" },
               { label: "Pendaftaran Mahasiswa Baru", href: "https://pmb.atmaluhur.ac.id/" },
               { label: "ISB Atma Luhur", href: "https://atmaluhur.ac.id" },

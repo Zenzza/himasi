@@ -12,9 +12,8 @@ const QuoteBanner: React.FC = () => {
           Avanza Romadhon - Ketua Umum HIMASI 2025
         </p>
         <h1 className="text-2xl md:text-4xl font-extrabold leading-snug max-w-3xl">
-          Lorem, ipsum dolor sit amet consectetur <br />
-          adipisicing elit. Quaestionem <br />
-          Lorem ipsum dolor sit amet 
+        Just ordinary boy <br />
+        Don't expect more of me. <br />
         </h1>
       </div>
     </div>

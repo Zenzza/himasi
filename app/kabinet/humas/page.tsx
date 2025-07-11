@@ -22,7 +22,6 @@ export default function HumasPage() {
 
   return (
     <main className="bg-[#f1f5f9] min-h-screen">
-      {/* Hero Section */}
       <div className="relative h-[250px] md:h-[400px] w-full">
         <Image
           src="/back1.jpg"
@@ -40,7 +39,6 @@ export default function HumasPage() {
         </div>
       </div>
 
-      {/* Ketua Divisi */}
       <section className="mt-12 px-4">
         <h2 className="text-xl font-bold text-center text-blue-800 uppercase">
           Ketua Divisi Humas
@@ -60,7 +58,6 @@ export default function HumasPage() {
         </div>
       </section>
 
-      {/* Anggota Divisi */}
       <section className="mt-16 px-4 pb-16">
         <h2 className="text-xl font-bold text-center text-blue-800 uppercase mb-6">
           Anggota Divisi Humas

@@ -1,10 +1,13 @@
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FAQAccordion from "@/components/FAQAccordion";
 import QuoteBanner from "@/components/QuoteBanner";
 import BeritaCarousel from "@/components/BeritaCarousel";
 import AspirasiForm from "@/components/Aspirasi";
 import Fitur from "@/components/Fitur";
+import AnimasiFadeIN from "@/components/AnimasiFadeIN";
+import SplashScreen from "@/components/SplashScreen";
 
 export const metadata = {
   title: "HIMASI ISB Atma Luhur",
@@ -13,12 +16,12 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col min-h-screen">
-      
-      <section className="relative w-full h-screen">
+    <main className="flex flex-col min-h-screen pt-14"> 
+    <SplashScreen />
+      <section className="relative w-full h-[calc(100vh-56px)]">
         <Image
           src="/back1.jpg"
-          alt="HIMASI Hero"
+          alt="HIMASI Banner"
           layout="fill"
           objectFit="cover"
           className="z-0"
@@ -27,12 +30,23 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-blue-950/20 flex flex-col justify-center items-center text-white z-10">
           <h1 className="text-6xl font-bold">HIMASI</h1>
           <p className="mt-4 text-2xl text-center">
-            Himpunan Mahasiswa Sistem Informasi ISB Atma Luhur
+            Himpunan Mahasiswa Sistem Informasi <br />
+            Institut Sains dan Bisnis Atma Luhur
           </p>
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <a href="#himasi">
+            <ChevronDown className="w-10 h-10 text-white animate-bounce" />
+          </a>
         </div>
       </section>
 
-      <section className="container mx-auto py-20 px-6 md:px-10 bg-gray-100 rounded-2xl">
+      <AnimasiFadeIN>
+      <section
+        id="himasi"
+        className="container mx-auto py-20 px-6 md:px-10 bg-gray-100 rounded-2xl"
+      >
         <h2 className="text-black text-3xl font-bold mb-2 text-center">HIMASI</h2>
         <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -64,7 +78,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </AnimasiFadeIN>
 
+      <AnimasiFadeIN>
       <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-gray-100">
         <h2 className="text-black text-3xl font-bold mb-2 text-center">Video Profil HIMASI</h2>
         <div className="w-24 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
@@ -78,13 +94,21 @@ export default function HomePage() {
           />
         </div>
       </section>
-
+      </AnimasiFadeIN>
       <section className="py-12 bg-gray-100 space-y-16">
+      <AnimasiFadeIN>
         <Fitur />
+      </AnimasiFadeIN>
+      <AnimasiFadeIN>
         <BeritaCarousel />
+      </AnimasiFadeIN>
         <QuoteBanner />
+      <AnimasiFadeIN>
         <AspirasiForm />
+      </AnimasiFadeIN>
+      <AnimasiFadeIN>
         <FAQAccordion />
+      </AnimasiFadeIN>
       </section>
     </main>
   );
