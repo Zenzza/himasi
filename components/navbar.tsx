@@ -187,7 +187,7 @@ export default function Navbar() {
                 <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">Home</Link>
                 <Link href="/berita" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">Berita</Link>
                 <Link href="/berita/koneksi" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">KONEKSI</Link>
-                <Link href="/berita/whats-on-si" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">WHAT's on SI</Link>
+                <Link href="/berita/whats-on-si" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 space-y-2 mt-2 font-semibold">What&apos;s on SI</Link>
                 <div className="space-y-2 mt-2">
                   <Link href="/kabinet" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm hover:text-blue-400 font-semibold">Kabinet</Link>
                   <div className="pl-4 space-y-1">

@@ -13,7 +13,7 @@ const QuoteBanner: React.FC = () => {
         </p>
         <h1 className="text-2xl md:text-4xl font-extrabold leading-snug max-w-3xl">
         Just ordinary boy <br />
-        Don't expect more of me. <br />
+        Don&apos;t expect more of me. <br />
         </h1>
       </div>
     </div>

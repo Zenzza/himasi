@@ -18,7 +18,7 @@ export default function WOSPage() {
         </div>
 
         <div className="relative z-10 px-6 md:pl-40 max-w-2xl text-white space-y-4">
-          <h1 className="text-5xl md:text-6xl font-bold">What's on SI?</h1>
+          <h1 className="text-5xl md:text-6xl font-bold">What&apos;s on SI?</h1>
           <p className="text-lg md:text-xl leading-relaxed">
             Konten QnA seru dari HIMASI yang ngebahas pertanyaan-pertanyaan seputar dunia Sistem Informasi! Mulai dari hal yang sering bikin bingung, mitos-mitos di dunia tech, sampai insight dari sudut pandang mahasiswa SI
           </p>
