@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "Kabinet - HIMASI ISB Atma Luhur",
   description: "Kabinet HIMASI ISB Atma Luhur.",
@@ -6,15 +8,20 @@ export const metadata = {
 export default function KabinetPage() {
   return (
     <div className="bg-white text-gray-800">
-      <section
-        className="relative h-[300px] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: 'url(/back1.jpg)' }}
-      >
-        <div className="absolute inset-0 flex flex-col justify-center items-center">
-          <h1 className="text-white text-3xl md:text-5xl font-bold pt-16">
-            KABINET RAKSABHINAYA
-          </h1>
-          <p className="text-white text-sm md:text-lg mt-2">
+      <section className="relative h-[400px] flex items-center justify-center text-white text-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/back1.jpg"
+            alt="Kabinet Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl md:text-5xl font-bold">KABINET RAKSABHINAYA</h1>
+          <p className="text-sm md:text-lg mt-2">
             Himpunan Mahasiswa Sistem Informasi ISB Atma Luhur
           </p>
         </div>
@@ -41,17 +48,17 @@ export default function KabinetPage() {
         <p className="text-center max-w-3xl mx-auto text-gray-700 mb-5">
           Kabinet RAKSABHINAYA membentuk struktur DP, BPH, dan 4 divisi utama di bawah naungan HIMASI.
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-4">
-          <a href="/kabinet/dewan-pembina" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition">Dewan Pembina</a>
-          <a href="/kabinet/pengurus-inti" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition">Pengurus Inti</a>
+          <a href="/kabinet/dewan-pembina" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition"> Dewan Pembina </a>
+          <a href="/kabinet/pengurus-inti" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition"> Pengurus Inti </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-          <a href="/kabinet/medkominfo" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition">Divisi MEDKOMINFO</a>
-          <a href="/kabinet/bisnis-kreatif" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition">Divisi Bisnis Kreatif</a>
-          <a href="/kabinet/humas" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition">Divisi Humas</a>
-          <a href="/kabinet/penasihat" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition">Divisi Penasihat</a>
+          <a href="/kabinet/medkominfo" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition"> Divisi MEDKOMINFO </a>
+          <a href="/kabinet/bisnis-kreatif" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition"> Divisi Bisnis Kreatif </a>
+          <a href="/kabinet/humas" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition"> Divisi Humas </a>
+          <a href="/kabinet/penasihat" className="block bg-blue-800 text-white text-center py-4 rounded-lg font-semibold hover:bg-[#1e326f] transition"> Divisi Penasihat </a>
         </div>
       </section>
     </div>

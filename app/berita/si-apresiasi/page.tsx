@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "SI-Apresiasi - HIMASI ISB Atma Luhur",
-  description: "Secret HIMASI ISB Atma Luhur.",
+  description: "Apresiasi Terhadap Para Mahasiswa/i Berprestasi oleh HIMASI ISB Atma Luhur.",
 };
 
 export default function ApresiasiPage() {

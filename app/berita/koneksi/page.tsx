@@ -1,7 +1,10 @@
-'use client';
-
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "KONEKSI - HIMASI ISB Atma Luhur",
+  description: "Konten Edukasi dari HIMASI ISB Atma Luhur yang Membahas EDUKASI Seputar Coding, Design, Database, dan lain-lainny.",
+};
 
 export default function KoneksiPage() {
   const KoneksiItems = [

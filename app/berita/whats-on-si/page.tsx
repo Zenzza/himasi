@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import VideoCard from "@/components/WhatsonSI";
 
+export const metadata = {
+  title: "WOS - HIMASI ISB Atma Luhur",
+  description: "Podcast Singkat dari HIMASI ISB Atma Luhur Yang Mengangkat Isu dan Pertanyaan Mahasiswa!.",
+};
+
 export default function WOSPage() {
   return (
     <main>

@@ -12,12 +12,13 @@ export default function DewanPembinaPage() {
       <div className="relative h-[300px] md:h-[400px] w-full">
         <Image
           src="/back1.jpg"
-          alt="HIMASI Hero"
+          alt="DP BACKGROUND"
           layout="fill"
           objectFit="cover"
           className="z-0"
           priority
         />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col justify-center items-center">
           <h1 className="text-3xl md:text-5xl font-bold pt-16">DEWAN PEMBINA</h1>
           <p className="text-sm md:text-lg mt-2">

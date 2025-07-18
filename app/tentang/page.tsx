@@ -10,14 +10,22 @@ import {
 
 export const metadata = {
   title: "Tentang - HIMASI ISB Atma Luhur",
-  description: "Tentang HIMASI ISB Atma Luhur.",
+  description: "Tentang dan Seputaran HIMASI ISB Atma Luhur.",
 };
 
-export default function Tentang() {
+export default function TentangPage() {
   return (
-    <div className="bg-white min-h-screen">
-      <div className="relative w-full h-[300px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: 'url(/back1.jpg)' }}>
-        <div className="text-center text-white z-10">
+    <div className="bg-white min-h-screen text-black">
+      <div className="relative w-full h-[300px] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/back1.jpg"
+          alt="Tentang HIMASI"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="z-10 text-center text-white">
           <h1 className="text-4xl font-bold pt-16">Tentang HIMASI</h1>
           <p className="text-lg">Yuk Kenalan dengan HIMASI!</p>
         </div>

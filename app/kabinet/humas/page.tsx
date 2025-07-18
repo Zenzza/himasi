@@ -25,12 +25,13 @@ export default function HumasPage() {
       <div className="relative h-[250px] md:h-[400px] w-full">
         <Image
           src="/back1.jpg"
-          alt="HIMASI Hero"
+          alt="HUMAS BACKGROUND"
           layout="fill"
           objectFit="cover"
           className="z-0"
           priority
         />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 text-white">
           <h1 className="text-2xl md:text-5xl font-bold pt-10">Divisi Humas</h1>
           <p className="text-sm md:text-lg mt-2">

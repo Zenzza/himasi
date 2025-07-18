@@ -23,18 +23,21 @@ export default function BackToTopButton() {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.button
-          key="backToTop"
-          onClick={scrollToTop}
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-6 right-6 z-50 p-3 bg-blue-700 text-white rounded-md shadow-lg hover:bg-blue-800 transition duration-300"
-          aria-label="Kembali ke atas"
+          className="fixed bottom-6 right-6 z-50"
         >
-          <ArrowUp size={20} />
-        </motion.button>
+          <button
+            onClick={scrollToTop}
+            className="p-3 bg-blue-700 text-white rounded-md shadow-lg hover:bg-blue-800 transition duration-300"
+            aria-label="Kembali ke atas"
+          >
+            <ArrowUp size={20} />
+          </button>
+        </motion.div>
       )}
     </AnimatePresence>
   )

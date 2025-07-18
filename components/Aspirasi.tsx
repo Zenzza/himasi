@@ -66,14 +66,13 @@ export default function AspirasiForm() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="email" className="block text-black mb-2">
-                  Email <span className="text-red-600">*</span>
+                  Email
                 </label>
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  required
-                  placeholder="Masukkan Email"
+                  placeholder="Masukkan Email atau Kosongkan Saja Jika ingin Anonim"
                   value={form.email}
                   onChange={handleChange}
                   className="w-full p-2 border border-black rounded placeholder-black text-black"

@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnimasiFadeIn from "@/components/AnimasiFadeIN";
 
 export const metadata = {
   title: "Berita - HIMASI ISB Atma Luhur",
-  description: "Berita HIMASI ISB Atma Luhur.",
+  description: "Berita Fresh dari HIMASI ISB Atma Luhur.",
 };
 
 export default function BeritaPage() {
@@ -61,7 +60,9 @@ export default function BeritaPage() {
 
   return (
     <main>
-      <section className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center">
+      <section 
+        className="bg-[url('/back1.jpg')] bg-cover bg-center text-white py-28 text-center inset-0 bg-black/50"
+      >
         <h1 className="text-4xl font-bold pt-16">BERITA HIMASI</h1>
         <p className="text-xl mt-4">Informasi / Berita seputar HIMASI</p>
       </section>
@@ -70,7 +71,6 @@ export default function BeritaPage() {
         <h2 className="text-2xl font-bold text-center text-gray-700 mb-3">2025</h2>
         <div className="w-16 h-1 bg-blue-950 mx-auto mb-10 rounded-full" />
 
-        <AnimasiFadeIn>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {beritaItems.map((item, index) => (
             <div
@@ -103,8 +103,8 @@ export default function BeritaPage() {
             </div>
           ))}
         </div>
-        </AnimasiFadeIn>
       </section>
     </main>
   );
 }
+

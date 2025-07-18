@@ -27,6 +27,7 @@ export default function HomePage() {
           className="z-0"
           priority
         />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 bg-blue-950/20 flex flex-col justify-center items-center text-white z-10">
           <h1 className="text-6xl font-bold">HIMASI</h1>
           <p className="mt-4 text-2xl text-center">
@@ -96,9 +97,7 @@ export default function HomePage() {
       </section>
       </AnimasiFadeIN>
       <section className="py-12 bg-gray-100 space-y-16">
-      <AnimasiFadeIN>
         <Fitur />
-      </AnimasiFadeIN>
       <AnimasiFadeIN>
         <BeritaCarousel />
       </AnimasiFadeIN>
